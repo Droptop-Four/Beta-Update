@@ -2,7 +2,8 @@
 
 DefaultFont=Droptop Roboto
 
-; IconStyles
+;    IconStyles
+
 ;    1 = Default
 ;    2 = MacOS
 ;    3 = 8-bit
@@ -777,7 +778,5 @@ ExchangeStyle22=#IconStyle22#
 LanguageStyle22=#IconStyle22#
 AppDrawerStyle22=#IconStyle22#
 AssistantStyle22=#IconStyle22#
-FF DIN Round Pro=FF DIN R
-Droptop Roboto=FF DIN R
 
 ; -----------------------
