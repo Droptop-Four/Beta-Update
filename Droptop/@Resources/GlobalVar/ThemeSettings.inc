@@ -437,7 +437,7 @@ FontSizeOffset13=0
 IconSizeOffset13=0
 TitleSpaOffset13=0
 
-FontName130=Droptop Roboto
+FontName130=Open Sans
 
 FontName131=#DefaultFont#
 TopBarFontName13=[#FontName[#ThemeNum][#AltFont[#LanguageNum]]]
