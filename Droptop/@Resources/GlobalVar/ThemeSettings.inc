@@ -432,7 +432,7 @@ AssistantStyle12=#IconStyle12#
 ; -----------------------
 ; 13. Minimalist
 
-FontYposOffset13=(1*(([#AltFont[#LanguageNum]]-1)*-1))
+FontYposOffset13=(0*(([#AltFont[#LanguageNum]]-1)*-1))
 FontSizeOffset13=0
 IconSizeOffset13=0
 TitleSpaOffset13=0
