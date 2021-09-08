@@ -5,7 +5,7 @@
 [DisabledApp]
 ImageAlpha=75
 FontColor=#SuperColor#,75
-MouseOverAction=[!UpdateMeter FolderBlock][!Redraw]
+MouseOverAction=[]
 MouseLeaveAction=[]
 FillColor=Fill Color #SuperColor#,75
 
@@ -67,34 +67,12 @@ MeterStyle=ArrowStyle | DisabledApp
 ;---
 
 [14]
-MeterStyle=InfoStyle
+MeterStyle=InfoStyle | DisabledApp
 
 [14Icon]
-MeterStyle=IconStyle
+MeterStyle=IconStyle | DisabledApp
 
 [14Arrow]
-MeterStyle=ArrowStyle
-
-;---
-
-[15]
-MeterStyle=InfoStyle | DisabledApp
-
-[15Icon]
-MeterStyle=IconStyle | DisabledApp
-
-[15Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-
-;---
-
-[16]
-MeterStyle=InfoStyle | DisabledApp
-
-[16Icon]
-MeterStyle=IconStyle | DisabledApp
-
-[16Arrow]
 MeterStyle=ArrowStyle | DisabledApp
 
 ;---
@@ -118,3 +96,16 @@ MeterStyle=IconStyle | DisabledApp
 
 [17Arrow]
 MeterStyle=ArrowStyle | DisabledApp
+
+;---
+
+[18]
+MeterStyle=InfoStyle | DisabledApp
+
+[18Icon]
+MeterStyle=IconStyle | DisabledApp
+
+[18Arrow]
+MeterStyle=ArrowStyle | DisabledApp
+
+;---
