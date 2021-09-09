@@ -12,7 +12,7 @@ DefaultFont=Droptop Roboto
 ; -----------------------
 ; 1. Default
 
-FontYposOffset1=(0*(([#AltFont[#LanguageNum]]-1)*-1))
+FontYposOffset1=0
 FontSizeOffset1=0
 IconSizeOffset1=0
 TitleSpaOffset1=0
