@@ -66,7 +66,7 @@ set advanced10="Firewall di Windows"
 set advanced11="Powershell di Windows"
 set advanced12="Servizi di Windows"
 
-set controlfol1="Controlli avannzati"
+set controlfol1="Controlli avanzati"
 set control1="Sfondi Desktop"
 set control2="Ipostazioni Display"
 set control3="Ingrandisci"
