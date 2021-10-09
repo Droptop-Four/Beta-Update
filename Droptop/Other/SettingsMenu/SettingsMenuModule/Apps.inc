@@ -118,3 +118,78 @@ MeterStyle=IconStyle | DisabledApp
 
 [17Arrow]
 MeterStyle=ArrowStyle | DisabledApp
+
+;---
+
+[18]
+MeterStyle=InfoStyle | DisabledApp
+Hidden=1
+
+[18Icon]
+MeterStyle=IconStyle | DisabledApp
+ImageName=
+Hidden=1
+
+[18Arrow]
+MeterStyle=ArrowStyle | DisabledApp
+Hidden=1
+
+;---
+
+[19]
+MeterStyle=InfoStyle | DisabledApp
+Hidden=1
+
+[19Icon]
+MeterStyle=IconStyle | DisabledApp
+ImageName=
+Hidden=1
+
+[19Arrow]
+MeterStyle=ArrowStyle | DisabledApp
+Hidden=1
+
+;---
+
+[20]
+MeterStyle=InfoStyle | DisabledApp
+Hidden=1
+
+[20Icon]
+MeterStyle=IconStyle | DisabledApp
+ImageName=
+Hidden=1
+
+[20Arrow]
+MeterStyle=ArrowStyle | DisabledApp
+Hidden=1
+
+;---
+
+[21]
+MeterStyle=InfoStyle | DisabledApp
+Hidden=1
+
+[21Icon]
+MeterStyle=IconStyle | DisabledApp
+ImageName=
+Hidden=1
+
+[21Arrow]
+MeterStyle=ArrowStyle | DisabledApp
+Hidden=1
+
+;---
+
+[22]
+MeterStyle=InfoStyle | DisabledApp
+Hidden=1
+
+[22Icon]
+MeterStyle=IconStyle | DisabledApp
+ImageName=
+Hidden=1
+
+[22Arrow]
+MeterStyle=ArrowStyle | DisabledApp
+Hidden=1
