@@ -36,6 +36,26 @@ OpenCortana:
  Send, #c
 ExitApp
 
+OpenCortana11:
+ SetStoreCapsLockMode, Off
+ If ProcessExist("Cortana.exe")
+	Process,Close,Cortana.exe
+
+ If !ProcessExist("Cortana.exe")
+    Run, "C:\Program Files\WindowsApps\Microsoft.549981C3F5F10_3.2110.13603.0_x64__8wekyb3d8bbwe\Cortana.exe"
+
+ ProcessExist(Name)
+ {
+	Process,Exist,%Name%
+	return Errorlevel
+ }
+ExitApp
+
+QuickSettings:
+ SetStoreCapsLockMode, Off
+ Send, #a
+ExitApp
+
 AppSwitcher:
  SetStoreCapsLockMode, Off
  Send, ^!{Tab}

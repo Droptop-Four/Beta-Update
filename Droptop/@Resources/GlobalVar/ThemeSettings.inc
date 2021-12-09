@@ -451,7 +451,7 @@ LanguageStyle12=#IconStyle12#
 AppDrawerStyle12=#IconStyle12#
 AssistantStyle12=#IconStyle12#
 
-DropdownSliderStyle12=3
+DropdownSliderStyle12=1
 
 ; -----------------------
 ; 13. Minimalist
