@@ -500,7 +500,7 @@ PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 powershell.exe git add .; git commit -m %1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop Beta Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
+powershell.exe gh release create v%1 '.\Droptop Beta Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
