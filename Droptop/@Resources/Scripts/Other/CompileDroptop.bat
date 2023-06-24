@@ -338,7 +338,7 @@ call %3Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" %3
 reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "#PROGRAMPATH#Rainmeter.exe" /t "REG_SZ" /d "" /f
 cd %3Droptop\@Resources\Scripts\ImageMagick" & convert %3Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" "Wallpaper1.png" & convert %3Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" -crop 9999x100+0+0 "WallpaperCropped.png" & convert "WallpaperCropped.png" -blur 0x3 "Wallpaper1.0.png" & convert "WallpaperCropped.png" -blur 0x8 "Wallpaper1.1.png" & del /f /q "WallpaperCropped.png" & xcopy /E /I /Y "Wallpaper*.png" %3Droptop\Other\WindowMenu\WallpaperCache" & xcopy /E /I /Y "Wallpaper*.png" %3Droptop Folders\Other files\Themes" & del /f /q "*.png" & taskkill /f /im "convert.exe" & taskkill /f /im "mogrify.exe"
 cd %3Droptop\@Resources\Scripts\Other"
-xcopy /s /e /y /f /i %3Droptop" %3Redistributables\Droptop-Master"
+REM xcopy /s /e /y /f /i %3Droptop" %3Redistributables\Droptop-Master"
 @echo Creating Basic, Update, & Supporter versions...
 TIMEOUT 10
 del /f /q %3Droptop Folders\Other files\Themes\*.ttf"
@@ -501,7 +501,7 @@ PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 powershell.exe git add .; git commit -m %1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Beta_Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
+powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -509,20 +509,20 @@ PAUSE
 @echo Are you sure? Press any key to continue.
 PAUSE
 
-cd "%USERPROFILE%\Documents\GitHub\Basic-Version"
+cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Basic_Version.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Basic Version"
+powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Droptop-Four\*.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Four"
 
-cd "%USERPROFILE%\Documents\GitHub\Supporter-Version"
-powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Supporter-Version\Droptop_Supporter_Version.rmskin' --latest --notes "" --title "Droptop Supporter Version"
+REM cd "%USERPROFILE%\Documents\GitHub\Supporter-Version"
+REM powershell.exe git add .; git commit -m v%1; git push
+REM powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Supporter-Version\Droptop_Supporter_Version.rmskin' --latest --notes "" --title "Droptop Supporter Version"
 
-cd "%USERPROFILE%\Documents\GitHub\Update"
-powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Update.rmskin' --latest --notes "See Discord #Announcements channel for change notes." --title "Droptop Update"
+REM cd "%USERPROFILE%\Documents\GitHub\Update"
+REM powershell.exe git add .; git commit -m v%1; git push
+REM powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Update.rmskin' --latest --notes "See Discord #Announcements channel for change notes." --title "Droptop Update"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to launch Droptop.
 PAUSE
 
-"C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
+REM "C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
