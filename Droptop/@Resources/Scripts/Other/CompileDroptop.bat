@@ -486,7 +486,7 @@ xcopy /E /I /Y %3Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documen
 REM xcopy /E /I /Y %3Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
 xcopy /E /I /Y %3Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+REM xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 REM xcopy /E /I /Y %3Redistributables\Supporter-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
@@ -500,6 +500,7 @@ powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
+git pull
 git add .
 git commit -m %1
 git push
@@ -512,13 +513,14 @@ PAUSE
 PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+git pull
 git add .
 git commit -m %1
 git push
-gh release create v%1 "%USERPROFILE%\Documents\GitHub\Droptop-Four\*.rmskin" --latest --notes "See Discord for change notes." --title "Droptop Four"
+gh release create v%1 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "See Discord for change notes." --title "Droptop Four"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
-@echo All versions pushed successfully. Press any key to launch Droptop.
+@echo All versions pushed successfully.
 PAUSE
 
 REM "C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
