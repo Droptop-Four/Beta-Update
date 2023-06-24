@@ -493,7 +493,7 @@ PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 powershell.exe git add .; git commit -m %1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\GitHub\Basic-Version\Droptop_Beta_Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
+powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Beta_Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -503,15 +503,15 @@ PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Basic-Version"
 powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\GitHub\Basic-Version\Droptop_Basic_Version.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Basic Version"
+powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Basic_Version.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Basic Version"
 
 cd "%USERPROFILE%\Documents\GitHub\Supporter-Version"
 powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\GitHub\Supporter-Version\Droptop_Supporter_Version.rmskin' --latest --notes "" --title "Droptop Supporter Version"
+powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Supporter-Version\Droptop_Supporter_Version.rmskin' --latest --notes "" --title "Droptop Supporter Version"
 
 cd "%USERPROFILE%\Documents\GitHub\Update"
 powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\GitHub\Basic-Version\Droptop_Update.rmskin' --latest --notes "See Discord #Announcements channel for change notes." --title "Droptop Update"
+powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Update.rmskin' --latest --notes "See Discord #Announcements channel for change notes." --title "Droptop Update"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to launch Droptop.
