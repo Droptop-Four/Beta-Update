@@ -470,7 +470,7 @@ RD /S /Q %3Redistributables\Update\Skins\Droptop"
 robocopy %3Droptop" %3Redistributables\Update\Skins\Droptop" /E
 attrib -h /s %3Redistributables\Basic-Version\Skins\Droptop Folders\desktop.ini"
 attrib -s /d /s %3Redistributables\Basic-Version\Skins\Droptop Folders\Games\*"
-powershell.exe cd %3Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop Basic Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop Supporter Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop Update.rmskin'; Copy-Item '.\@Rmskins\Update\Droptop Update.rmskin' -Destination '.\@Rmskins\Beta-Update'; Rename-Item -Path '.\@Rmskins\Beta-Update\Droptop Update.rmskin' -NewName 'Droptop Beta Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop Community Apps\Apps' -Recurse
+powershell.exe cd %3Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Copy-Item '.\@Rmskins\Update\Droptop_Update.rmskin' -Destination '.\@Rmskins\Beta-Update'; Rename-Item -Path '.\@Rmskins\Beta-Update\Droptop_Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop Community Apps\Apps' -Recurse
 
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop Folders"
@@ -500,7 +500,7 @@ PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 powershell.exe git add .; git commit -m %1; git push
-powershell.exe gh release create v%1 '.\Droptop Beta Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
+powershell.exe gh release create v%1 "$env:USERPROFILE\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -510,7 +510,7 @@ PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Droptop-Four\*.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Four"
+powershell.exe gh release create v%1 '$env:USERPROFILE\Documents\GitHub\Droptop-Four\*.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Four"
 
 REM cd "%USERPROFILE%\Documents\GitHub\Supporter-Version"
 REM powershell.exe git add .; git commit -m v%1; git push
