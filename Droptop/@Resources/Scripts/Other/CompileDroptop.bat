@@ -470,7 +470,7 @@ RD /S /Q %3Redistributables\Update\Skins\Droptop"
 robocopy %3Droptop" %3Redistributables\Update\Skins\Droptop" /E
 attrib -h /s %3Redistributables\Basic-Version\Skins\Droptop Folders\desktop.ini"
 attrib -s /d /s %3Redistributables\Basic-Version\Skins\Droptop Folders\Games\*"
-powershell.exe cd %3Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop Basic Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop Supporter Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop Update.rmskin'; Copy-Item '.\@Rmskins\Update\Droptop Update.rmskin' -Destination '.\@Rmskins\Beta-Update'; Rename-Item -Path '.\@Rmskins\Beta-Update\Droptop Update.rmskin' -NewName 'Droptop Beta Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop Community Apps\Apps' -Recurse
+powershell.exe cd %3Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Copy-Item '.\@Rmskins\Update\Droptop Update.rmskin' -Destination '.\@Rmskins\Beta-Update'; Rename-Item -Path '.\@Rmskins\Beta-Update\Droptop Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop Community Apps\Apps' -Recurse
 xcopy /E /I /Y %3Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Basic-Version\"
 xcopy /E /I /Y %3Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 xcopy /E /I /Y %3Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
@@ -482,30 +482,39 @@ xcopy /E /I /Y %3Redistributables\Supporter-Version\Skins\*" "%USERPROFILE%\Docu
 xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Update\"
 xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 
-REM xcopy /E /I /Y %3Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Basic-Version\"
-REM cd "%USERPROFILE%\Documents\GitHub\Basic-Version\*"
-REM git add .; git commit -m 12345; git push
-
-REM xcopy /E /I /Y %3Redistributables\Supporter-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
-REM cd "%USERPROFILE%\Documents\GitHub\Supporter-Version\*"
-REM git add .; git commit -m 12345; git push
-
-REM xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Update\"
-REM cd "%USERPROFILE%\Documents\GitHub\Update\*"
-REM git add .; git commit -m 12345; git push
-
 "%USERPROFILE%\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %3Droptop\Other\Startup\Start.ini"
 attrib -h /s %3Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %3Droptop\@Resources\OriginalFolders\Games\*"
 
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
-@echo All distributables finished successfully. Press any key to push Beta-Update to github.
+@echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
 PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
-git add .; git commit -m 12345; git push
+powershell.exe git add .; git commit -m %1; git push
+gh release create v%1 '%USERPROFILE%\GitHub\Basic-Version\Droptop_Beta_Update.rmskin' --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
 
+powershell.exe [console]::beep(800,200); [console]::beep(800,320)
+@echo Press any key to push all remaining versions to GitHub.
+PAUSE
+@echo Are you sure? Press any key to continue.
+PAUSE
+
+cd "%USERPROFILE%\Documents\GitHub\Basic-Version"
+powershell.exe git add .; git commit -m v%1; git push
+gh release create v%1 '%USERPROFILE%\GitHub\Basic-Version\Droptop_Basic_Version.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Basic Version"
+
+cd "%USERPROFILE%\Documents\GitHub\Supporter-Version"
+powershell.exe git add .; git commit -m v%1; git push
+gh release create v%1 '%USERPROFILE%\GitHub\Supporter-Version\Droptop_Supporter_Version.rmskin' --latest --notes "" --title "Droptop Supporter Version"
+
+cd "%USERPROFILE%\Documents\GitHub\Update"
+powershell.exe git add .; git commit -m v%1; git push
+gh release create v%1 '%USERPROFILE%\GitHub\Basic-Version\Droptop_Update.rmskin' --latest --notes "See Discord #Announcements channel for change notes." --title "Droptop Update"
+
+powershell.exe [console]::beep(100,900); [console]::beep(200,820)
+@echo All versions pushed successfully. Press any key to launch Droptop.
 PAUSE
 
 "C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
