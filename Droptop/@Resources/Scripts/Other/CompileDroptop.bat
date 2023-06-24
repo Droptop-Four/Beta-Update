@@ -479,15 +479,15 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Supporter-Version\Droptop"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Update\Droptop"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 
-xcopy /E /I /Y %3Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Basic-Version\"
-xcopy /E /I /Y %3Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
+xcopy /E /I /Y %3Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %3Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %3Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
-xcopy /E /I /Y %3Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Update\"
+REM xcopy /E /I /Y %3Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
-xcopy /E /I /Y %3Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Basic-Version\"
-xcopy /E /I /Y %3Redistributables\Supporter-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
-xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Update\"
+xcopy /E /I /Y %3Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %3Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
+REM xcopy /E /I /Y %3Redistributables\Supporter-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
 "%USERPROFILE%\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %3Droptop\Other\Startup\Start.ini"
@@ -502,7 +502,7 @@ cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git add .
 git commit -m %1
 git push
-gh release create v%1 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "" --title "Droptop Beta Update"
+gh release create v%1 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See Discord #Preview-Updates channel for change notes. (https://discord.com/channels/800124057923485728/801786468426973185)" --title "Droptop Beta Update"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -511,16 +511,10 @@ PAUSE
 PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
-powershell.exe git add .; git commit -m v%1; git push
-powershell.exe gh release create v%1 '$env:USERPROFILE\Documents\GitHub\Droptop-Four\*.rmskin' --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Four"
-
-REM cd "%USERPROFILE%\Documents\GitHub\Supporter-Version"
-REM powershell.exe git add .; git commit -m v%1; git push
-REM powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Supporter-Version\Droptop_Supporter_Version.rmskin' --latest --notes "" --title "Droptop Supporter Version"
-
-REM cd "%USERPROFILE%\Documents\GitHub\Update"
-REM powershell.exe git add .; git commit -m v%1; git push
-REM powershell.exe gh release create v%1 '%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop_Update.rmskin' --latest --notes "See Discord #Announcements channel for change notes." --title "Droptop Update"
+git add .
+git commit -m %1
+git push
+gh release create v%1 "%USERPROFILE%\Documents\GitHub\Droptop-Four\*.rmskin" --latest --notes "See Discord #Announcements channel for change notes. (https://discord.com/channels/800124057923485728/801785532035760138)" --title "Droptop Four"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to launch Droptop.
