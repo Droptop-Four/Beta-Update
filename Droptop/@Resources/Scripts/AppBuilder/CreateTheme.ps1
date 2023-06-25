@@ -48,7 +48,5 @@ Move-Item -Path '.\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.
 cd .\Droptop\@Resources\Scripts\AppBuilder
 Remove-Item -Path ".\ThemeTemplate\Skins\Droptop\@Resources\Themes\*" -Recurse
 Remove-Item -Path ".\@Rmskins\*.zip" -Recurse
-cd "$skinspath"
-Invoke-Item '.\Droptop Folders\Other files\@Rmskins\Droptop Themes'
 
-Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", "Droptop\Other\WindowMenu"
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'

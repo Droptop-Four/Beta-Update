@@ -36,11 +36,11 @@ Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Dro
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\32bit\*" -Recurse
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\64bit\*" -Recurse
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recurse
-Invoke-Item ".\Droptop Folders\Other files\@Rmskins\Droptop Apps"
 
 if ($gitinit -eq 1)
 {
     git init ".\Droptop Community Apps\Apps\$appname"
 }
 
-Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", "Droptop\Other\WindowMenu"
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
+

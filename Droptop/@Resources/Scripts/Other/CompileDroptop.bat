@@ -481,7 +481,7 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 
 xcopy /E /I /Y %3Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %3Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-xcopy /E /I /Y %3Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+REM xcopy /E /I /Y %3Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %3Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 REM xcopy /E /I /Y %3Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
