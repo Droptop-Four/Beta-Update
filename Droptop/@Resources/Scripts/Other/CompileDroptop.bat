@@ -3,6 +3,7 @@ attrib -h /s %3Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %3Droptop\@Resources\OriginalFolders\Games\*"
 robocopy %3Redistributables\@Rmskins\Update" %3Redistributables\Archive\Droptop %1" /E
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfigGroup DroptopSuite
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 0 %3Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 0 %3Droptop\@Resources\GlobalVar\Supporter.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc1 "#SKINSPATH#Droptop Folders\PinnedApps" %3Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc2 "#SKINSPATH#Droptop Folders\Games" %3Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -468,9 +469,17 @@ del /f %3Redistributables\Supporter-Version\Skins\Droptop\@Resources\GlobalVar\T
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 100 %3Droptop\Other\Startup\Start.ini"
 RD /S /Q %3Redistributables\Update\Skins\Droptop"
 robocopy %3Droptop" %3Redistributables\Update\Skins\Droptop" /E
+@echo Update Version Complete
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 1 %3Droptop\@Resources\GlobalVar\Control.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %3Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 0 %3Droptop\@Resources\GlobalVar\Supporter.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 100 %3Droptop\Other\Startup\Start.ini"
+RD /S /Q %3Redistributables\Beta-Update\Skins\Droptop"
+robocopy %3Droptop" %3Redistributables\Beta-Update\Skins\Droptop" /E
+@echo Beta Version Complete
 attrib -h /s %3Redistributables\Basic-Version\Skins\Droptop Folders\desktop.ini"
 attrib -s /d /s %3Redistributables\Basic-Version\Skins\Droptop Folders\Games\*"
-powershell.exe cd %3Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Copy-Item '.\@Rmskins\Update\Droptop_Update.rmskin' -Destination '.\@Rmskins\Beta-Update'; Rename-Item -Path '.\@Rmskins\Beta-Update\Droptop_Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop Community Apps\Apps' -Recurse
+powershell.exe cd %3Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop Community Apps\Apps' -Recurse
 
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop Folders"
