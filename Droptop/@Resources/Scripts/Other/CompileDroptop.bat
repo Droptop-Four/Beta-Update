@@ -307,6 +307,7 @@ robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop 
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables NumberOfItems 1 %4Droptop\Other\Apps\Downloads\Downloads.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables NumberOfItems 1 %4Droptop\Other\Apps\Recent\Recent.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables EnableDragDrop 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables LargeHomeButton 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ZposFocused 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DisableDPINum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DPIRescaleValue 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
