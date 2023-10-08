@@ -66,6 +66,8 @@ $control9=$args[57]
 $control10=$args[58]
 $control11=$args[59]
 
+$ErrorActionPreference= 'silentlycontinue'
+
 cd "$path\Bookmarks\News & media"
 
 Rename-Item -Path ".\Far-Left" -NewName "$newsmediafol1" -Force
