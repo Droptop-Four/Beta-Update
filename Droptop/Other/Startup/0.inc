@@ -18,7 +18,7 @@ ScriptFile=#@#Scripts\Powershell\Func.ps1
 [RunCommand.Restart]
 Measure=Plugin
 Plugin=RunCommand
-Parameter=taskkill /f /im "Rainmeter.exe" && start "" "#PROGRAMPATH#Rainmeter.exe" & attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
+Parameter=taskkill /f /im "Rainmeter.exe" & xcopy /s /e /y /f /i "C:\Users\%USERNAME%\OneDrive\Documents\Rainmeter\Skins" "C:\Users\%USERNAME%\Documents\Rainmeter\Skins" & timeout 1 && start "" "#PROGRAMPATH#Rainmeter.exe" & attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
 State=Hide
 OutputType=ANSI
 OutputFile=
