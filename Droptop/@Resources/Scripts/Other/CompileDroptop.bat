@@ -103,8 +103,6 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderIsColor10 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderIsColor11 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderIsColor12 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables TopBarDividerWidth 5 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables TopBarDividerHeight 0.5 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables MailNum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables MailLink1 """""" %4Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables MailAuthor1 """""" %4Droptop\@Resources\GlobalVar\Control.inc"
