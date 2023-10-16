@@ -385,6 +385,7 @@ xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Layouts\*" %4Redistribut
 xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Layouts\*" %4Redistributables\Update\Layouts"
 xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Plugins\*" %4Redistributables\Basic-Version\Plugins"
 xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Plugins\*" %4Redistributables\Update\Plugins"
+xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Plugins\*" %4Redistributables\Beta-Update\Plugins"
 xcopy /E /I /Y %4Droptop Community Apps" %4Redistributables\Basic-Version\Skins\Droptop Community Apps" /EXCLUDE:XcopyExclude.txt
 robocopy %4Droptop" %4Redistributables\Basic-Version\Skins\Droptop" /E
 robocopy %4Droptop\@Resources\OriginalFolders" %4Redistributables\Basic-Version\Skins\Droptop Folders" /E
