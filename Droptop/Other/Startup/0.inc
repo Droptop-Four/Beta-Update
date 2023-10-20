@@ -26,7 +26,8 @@ OutputFile=
 [Start]
 Measure=Calc
 IfCondition=#FirstLoad#=1
-IfTrueAction=[!WriteKeyValue Variables Page 1][!Delay 2000][!CommandMeasure RunCommand.Restart "Run"]
+; IfTrueAction=[!WriteKeyValue Variables Page 1][!Delay 2000][!CommandMeasure RunCommand.Restart "Run"]
+IfTrueAction=[!WriteKeyValue Variables Page 1][!Delay 2000][!Refresh]
 IfFalseAction=[!Delay 1000][!CommandMeasure PSRM "MakeShortcut"][!CommandMeasure MeasureCreateFolders "Run"]
 
 [MeasureOSVersion]
@@ -36,7 +37,7 @@ SysInfoType=OS_VERSION
 Substitute=".*Windows 10.*":"1",".*Windows 11.*":"2"
 RegExpSubstitute=1
 IfMatch=1
-IfMatchAction=[!WriteKeyValue Variables OSVERSION 10 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Win10Apps 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables SysIconSizeNum 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables LegacyAppDrawer 0 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables TopBarRoundCorners 1 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables TopBarRoundCorners 1 "#@#Themes\2Settings.inc"][!WriteKeyValue Variables DropdownRoundCorners 1 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables DropdownRoundCorners 1 "#@#Themes\2Settings.inc"][!WriteKeyValue Variables DropdownMenuShadow 0 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables DropdownMenuShadow 0 "#@#Themes\2Settings.inc"]
+IfMatchAction=[!WriteKeyValue Variables OSVERSION 10 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Win10Apps 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables SysIconSizeNum 0 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables LegacyAppDrawer 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables TopBarRoundCorners 1 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables TopBarRoundCorners 1 "#@#Themes\2Settings.inc"][!WriteKeyValue Variables DropdownRoundCorners 1 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables DropdownRoundCorners 1 "#@#Themes\2Settings.inc"][!WriteKeyValue Variables DropdownMenuShadow 0 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables DropdownMenuShadow 0 "#@#Themes\2Settings.inc"]
 IfMatch2=2
 IfMatchAction2=[!WriteKeyValue Variables OSVERSION 11 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Win10Apps 0 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables SysIconSizeNum 0 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables LegacyAppDrawer 2 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables TopBarRoundCorners 1 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables TopBarRoundCorners 1 "#@#Themes\2Settings.inc"][!WriteKeyValue Variables DropdownRoundCorners 1 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables DropdownRoundCorners 1 "#@#Themes\2Settings.inc"][!WriteKeyValue Variables DropdownMenuShadow 0 "#@#Themes\1Settings.inc"][!WriteKeyValue Variables DropdownMenuShadow 0 "#@#Themes\2Settings.inc"]["powershell.exe" cd '#SKINSPATH#Droptop\@Resources\Scripts\Powershell'; .\ExcludeDefender.ps1 '#SKINSPATH#' '#PROGRAMPATH#Rainmeter.exe']
 
@@ -46,26 +47,7 @@ Plugin=RunCommand
 Parameter=reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" /v "Personal" /t "REG_EXPAND_SZ" /d ""^%USERPROFILE^%\Documents"" /f & reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "#PROGRAMPATH#Rainmeter.exe" /t "REG_SZ" /d "~ HIGHDPIAWARE" /f & "Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#" & xcopy /a /y /i /f "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs" "#SKINSPATH#Droptop Folders\PinnedApps" & xcopy /s /y /i /f "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Steam" "#SKINSPATH#Droptop Folders\Games" & xcopy /s /e /y /f /i "#SKINSPATH#Droptop\@Resources\Scripts\Other\Layouts\*" "#SETTINGSPATH#Layouts" & xcopy /s /e /y /f /i "#SKINSPATH#" "C:\Users\%USERNAME%\Documents\Rainmeter\Skins"
 OutputType=ANSI
 OutputFile=
-FinishAction=[!WriteKeyValue Variables FirstLoad 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Page 1][!WriteKeyValue Rainmeter SkinPath "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\" "#SETTINGSPATH#Rainmeter.ini"][!CommandMeasure RunCommand.Restart "Run"]
-
-; [MeasurePower]
-; Measure=Plugin
-; Plugin=PowerPlugin
-; UpdateDivider=-1
-; PowerState=PERCENT
-
-; [MeasureCharging]
-; Measure=Plugin
-; Plugin=PowerPlugin
-; PowerState=ACLINE
-; DynamicVariables=1
-
-; [GuessDesktop]
-; Measure=Calc
-; IfCondition=([MeasurePower] = 100) && ([MeasureCharging] = 1)
-; IfTrueAction=[!WriteKeyValue Variables HideSubIcons 0 "#@#GlobalVar\UserSettings.inc"]
-; IfFalseAction=[!WriteKeyValue Variables HideSubIcons 1 "#@#GlobalVar\UserSettings.inc"]
-; DynamicVariables=1
+FinishAction=[!WriteKeyValue Variables FirstLoad 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Page 1][!WriteKeyValue Rainmeter SkinPath "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\" "#SETTINGSPATH#Rainmeter.ini"]["#@#Scripts\RestartRainmeter.bat"]
 
 [Container]
 Meter=String

