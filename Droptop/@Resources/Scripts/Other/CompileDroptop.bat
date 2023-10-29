@@ -4,6 +4,7 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 powershell.exe cd %4Droptop\@Resources\Scripts\Powershell"; .\TranslationEncoding.ps1 %4Droptop\@Resources\GlobalVar"
 REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop %1" /E
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfigGroup DroptopSuite
+"C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfig Droptop\DropdownBar\AppBar
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 0 %4Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 0 %4Droptop\@Resources\GlobalVar\Supporter.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc1 "#SKINSPATH#Droptop Folders\PinnedApps" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -166,7 +167,8 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatterySaverON 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryPowerLowThreshold0 20 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Time24HourNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables UserTimeFormat "%a, %#d %b %Y %H:%M" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables TimeFormatTypeNum 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CenterTimeFormatTypeNum 3 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopDisplayNum 99 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopDisplayMonitor "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopPriorityList "Not set" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
