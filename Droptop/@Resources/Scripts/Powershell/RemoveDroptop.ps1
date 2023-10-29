@@ -7,6 +7,7 @@ $programpath=$args[2]
 $ErrorActionPreference= 'silentlycontinue'
 
 	Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfigGroup", "DroptopSuite"
+	Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", "Droptop\DropdownBar\AppBar"
 	Start-Process -FilePath "$programpath" -ArgumentList "!Quit"
 	# taskkill /f /im "cmd.exe"
 	
