@@ -544,7 +544,8 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
-PAUSE
+
+TIMEOUT 10
 
 git config --global user.name "%USERNAME%"
 git config --global user.email "N/A"
