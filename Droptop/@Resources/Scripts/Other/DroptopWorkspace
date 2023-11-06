@@ -100,6 +100,7 @@
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\VolumeSliders.inc" />
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Developer.inc" />
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Battery.inc" />
+                <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\BatterySaver.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
@@ -212,6 +213,7 @@
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Folder\Config\FolderConfig.inc" />
             </Folder>
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Notes\Notes.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
         </Folder>
         <Folder name="Windows">
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\FunctionSetting.ini" />
