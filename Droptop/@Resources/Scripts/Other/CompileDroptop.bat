@@ -36,7 +36,6 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ReverseDarkLight 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables RecentFileFilter "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables NowPlayingClipNum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables MondDevelopmentMode 0 %4Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables GmailUsername "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables GmailPassword "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DeviceIsMobile 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
