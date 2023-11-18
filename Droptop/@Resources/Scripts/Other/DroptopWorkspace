@@ -100,6 +100,7 @@
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\VolumeSliders.inc" />
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Developer.inc" />
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Battery.inc" />
+                <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\BatterySaver.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
@@ -161,6 +162,7 @@
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Application.ini" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Alarm\Alarm.ini" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Battery\Battery.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Downloads\Downloads.ini" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Mail\Mail.ini" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\MOND\MOND.ini" />
@@ -193,9 +195,6 @@
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder3.ini" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder4.ini" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Notes\Notes.ini" />
-            </Folder>
-            <Folder name="Exch Folders">
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Exchange\Folder\Folder2.ini" />
             </Folder>
             <Folder name="Wifi Folders">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Wifi\Folder\Folder3.ini" />
