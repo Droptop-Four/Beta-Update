@@ -63,6 +63,11 @@ AppDrawer:
  Send, {Space}
 ExitApp
 
+CloseAppDrawer:
+ Send, #b
+ Send, {Esc}
+ExitApp
+
 QuickSettings:
  SetStoreCapsLockMode, Off
  Send, #a
@@ -156,6 +161,7 @@ ExitApp
 ;----------
 
 WebBack:
+ WinActivate ahk_class Chrome_WidgetWin_11
  SetStoreCapsLockMode, Off
  Send, !{Left}
 ExitApp
@@ -175,11 +181,9 @@ WebCapture:
  Send, ^+s
 ExitApp
 
-;----------
-
-BrowserHome:
- SetStoreCapsLockMode, Off
- Send, {Browser_Home}
+HideWebView:
+ WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
+ ; WinHide %2%
 ExitApp
 
 ;----------
@@ -240,11 +244,6 @@ ExitApp
 
 SendClipboard:
  SendRaw %clipboard%
-ExitApp
-
-HideWebView:
- WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
- ; WinHide %2%
 ExitApp
 
 ;----------
