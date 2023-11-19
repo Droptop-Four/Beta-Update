@@ -177,6 +177,30 @@ ExitApp
 
 ;----------
 
+BrowserHome:
+ SetStoreCapsLockMode, Off
+ Send, {Browser_Home}
+ExitApp
+
+;----------
+
+MediaPlayPause:
+ SetStoreCapsLockMode, Off
+ Send, {Media_Play_Pause}
+ExitApp
+
+MediaPrev:
+ SetStoreCapsLockMode, Off
+ Send, {Media_Prev}
+ExitApp
+
+MediaNext:
+ SetStoreCapsLockMode, Off
+ Send, {Media_Next}
+ExitApp
+
+;----------
+
 PrintScreen:
  Send, {PrintScreen}
 ExitApp
@@ -216,6 +240,11 @@ ExitApp
 
 SendClipboard:
  SendRaw %clipboard%
+ExitApp
+
+HideWebView:
+ WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
+ ; WinHide %2%
 ExitApp
 
 ;----------
