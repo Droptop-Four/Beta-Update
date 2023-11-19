@@ -11,6 +11,7 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\ChangeMode.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\Diagnostics.ini" />
                 <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CheckUpdate.ini" />
+                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\GetGUID.ini" />
             </Folder>
             <Folder name="ContextBox">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\ContextBox\ContextBox1.ini" />
@@ -76,7 +77,7 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Shadows.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\MoreOptions.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\TimeFormat.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\TimeFormatCenter.inc" />
+                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\TimeFormatCenter.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldUsername.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldFolderTitle.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldDownloadsLoc.inc" />
@@ -98,7 +99,8 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\PlayerType.inc" />
                 <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\VolumeSliders.inc" />
                 <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Developer.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Battery.inc" />
+                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Battery.inc" />
+                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\BatterySaver.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
@@ -160,6 +162,7 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Application.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Alarm\Alarm.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Battery\Battery.ini" />
+            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Downloads\Downloads.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Mail\Mail.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\MOND\MOND.ini" />
@@ -193,9 +196,6 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder4.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Notes\Notes.ini" />
             </Folder>
-            <Folder name="Exch Folders">
-                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Exchange\Folder\Folder2.ini" />
-            </Folder>
             <Folder name="Wifi Folders">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Wifi\Folder\Folder3.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Wifi\Folder\Folder4.ini" />
@@ -211,6 +211,10 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Folder\Config\FolderConfig.inc" />
             </Folder>
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Notes\Notes.ini" />
+            <Folder name="Sample WebView">
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\CustomApp.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Config\MainConfig.inc" />
+            </Folder>
         </Folder>
         <Folder name="Windows">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\FunctionSetting.ini" />
@@ -222,6 +226,7 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\ThemeBuilder.Share.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\CommandBuilder.Create.ini" />
             <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\AppName.Create.ini" />
+            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\UpdateDroptop.ini" />
         </Folder>
         <Folder name="Power">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\PowerMenu\dialogLock.ini" />
@@ -238,6 +243,7 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\SettingsSubMenuMeters.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\MenubarInfoMeters.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\PowerMenuMeters.inc" />
+            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MonitorBrightness0.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\WindowMeters.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppStartup.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppMeters.inc" />
