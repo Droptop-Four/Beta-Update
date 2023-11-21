@@ -46,7 +46,9 @@ if ($gitinit -eq 1)
 	Set-Content -NoNewline -Encoding OEM ".\Droptop Community Apps\Apps\$appname\README.md" -Value (Get-Content -Raw -Encoding 'utf8' ".\Droptop Community Apps\Apps\$appname\README.md")
 }
 
-Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
+
+Start-Sleep -Seconds 3
 
 Invoke-Item '.\Droptop Folders\Other files\@Rmskins\Droptop Apps'
 

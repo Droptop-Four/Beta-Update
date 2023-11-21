@@ -52,6 +52,8 @@ cd .\Droptop\@Resources\Scripts\AppBuilder
 Remove-Item -Path ".\ThemeTemplate\Skins\Droptop\@Resources\Themes\*" -Recurse
 Remove-Item -Path ".\@Rmskins\*.zip" -Recurse
 
-Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
+
+Start-Sleep -Seconds 3
 
 Invoke-Item '.\Droptop Folders\Other files\@Rmskins\Droptop Themes'
