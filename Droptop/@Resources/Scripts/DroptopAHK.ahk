@@ -161,7 +161,6 @@ ExitApp
 ;----------
 
 WebBack:
- WinActivate ahk_class Chrome_WidgetWin_11
  SetStoreCapsLockMode, Off
  Send, !{Left}
 ExitApp
