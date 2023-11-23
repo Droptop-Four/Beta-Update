@@ -1,11 +1,4 @@
-﻿$filePath=$args[0]
-$fileName=$args[1]
-$extension=$args[2]
-$skinsPath=$args[3]
-$programPath=$args[4]
-$themeNum=$args[5]
-
-Add-Type -AssemblyName System.Drawing
+﻿Add-Type -AssemblyName System.Drawing
 $path = "$filePath$fileName$extension"
 
 $fontFiles = Get-ChildItem $path
