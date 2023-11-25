@@ -1,8 +1,8 @@
+REM "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned" required to create RMSKIN files.
+
 @echo Reseting configurations to default
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
-REM powershell.exe cd %4Droptop\@Resources\Scripts\Powershell"; .\TranslationEncoding.ps1 %4Droptop\@Resources\GlobalVar"
-REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop %1" /E
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfigGroup DroptopSuite
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfig Droptop\DropdownBar\AppBar
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 0 %4Droptop\@Resources\GlobalVar\Control.inc"
