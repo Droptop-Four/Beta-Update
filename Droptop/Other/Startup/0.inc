@@ -40,7 +40,7 @@ OutputFile=
 Measure=Plugin
 Plugin=PowershellRM
 Line=$skinsPath = "#SKINSPATH#"; $programPath = "#PROGRAMPATH#Rainmeter.exe"
-Line2=function Run() { iwr -useb "#GitScriptLoc#ExcludeDefender.ps1" | iex }
+Line2=function Run() { iwr -useb "#GitPS1Loc#ExcludeDefender.ps1" | iex }
 OnChangeAction=
 UpdateDivider=-1
 

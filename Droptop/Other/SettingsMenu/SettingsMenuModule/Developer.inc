@@ -33,7 +33,7 @@ IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 Measure=Plugin
 Plugin=PowershellRM
 Line=$replace1 = '\\thomas.whittaker\\'; $replace2 = '\carib\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
-Line2=function Run() { iwr -useb "#GitScriptLoc#ReplaceInFile.ps1" | iex }
+Line2=function Run() { iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex }
 OnChangeAction=
 UpdateDivider=-1
 
@@ -41,7 +41,7 @@ UpdateDivider=-1
 Measure=Plugin
 Plugin=PowershellRM
 Line=$parentFolderPath = "#SKINSPATH#Droptop\@Resources\GlobalVar"
-Line2=function Run() { iwr -useb "#GitScriptLoc#TranslationEncoding.ps1" | iex }
+Line2=function Run() { iwr -useb "#GitPS1Loc#TranslationEncoding.ps1" | iex }
 OnChangeAction=
 UpdateDivider=-1
 
