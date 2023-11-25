@@ -594,7 +594,7 @@ git pull
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to download Droptop (New install)](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Basic_Version.rmskin) :arrow_down: <<<" --title "Droptop Four"
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to update Droptop)](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Update.rmskin) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
