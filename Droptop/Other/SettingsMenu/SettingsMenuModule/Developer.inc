@@ -73,11 +73,20 @@ ImageFlip=[#IconFlip0[#AutoAltHome]]
 MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
 Y=[Developer2:Y]
 
+[RunCommand.Attrib]
+Measure=Plugin
+Plugin=RunCommand
+Parameter=attrib -s -h /d /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\Games\*" & attrib -s /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\desktop.ini" & attrib +h /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\desktop.ini" & attrib +s /d /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\Games\*"
+State=Hide
+OutputType=ANSI
+OutputFile=
+DynamicVariables=1
+
 [Developer3]
 Meter=String
 MeterStyle=InfoStyle | DevToolsStyle#ShowDevTools#
 Text=Correct install errors
-LeftMouseDownAction=#CloseSettingsMenu#[!EnableMeasure MeasureReplaceInFile][!UpdateMeasure MeasureReplaceInFile][attrib -s -h /d /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\Games\*"; attrib -s /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\desktop.ini"; attrib +h /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\desktop.ini"; attrib +s /d /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\Games\*"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
+LeftMouseDownAction=#CloseSettingsMenu#[!EnableMeasure MeasureReplaceInFile][!UpdateMeasure MeasureReplaceInFile][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
 Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)+(#DropdownItemHeight#*2))
 
 [Developer3Icon]

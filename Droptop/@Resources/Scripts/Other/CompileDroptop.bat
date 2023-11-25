@@ -531,18 +531,18 @@ attrib -h /s %4Redistributables\Basic-Version\Skins\Droptop Folders\desktop.ini"
 attrib -s /d /s %4Redistributables\Basic-Version\Skins\Droptop Folders\Games\*"
 powershell.exe cd %4Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
-git config --global user.name "%USERNAME%"
-git config --global user.email "N/A"
+REM git config --global user.name "%USERNAME%"
+REM git config --global user.email "N/A"
 
-git config --global http.sslVerify false
-cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
-git checkout main
-git pull
+REM git config --global http.sslVerify false
+REM cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
+REM git checkout main
+REM git pull
 
-git config --global http.sslVerify false
-cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
-git checkout main
-git pull
+REM git config --global http.sslVerify false
+REM cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+REM git checkout main
+REM git pull
 
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop Folders"

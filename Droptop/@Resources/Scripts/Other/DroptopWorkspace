@@ -35,9 +35,9 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\100.inc" />
         </Folder>
         <Folder name="GlobalVar">
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Control.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\UserSettings.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\UserAppCommands.inc" />
-            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Control.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\FolderSettings.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\TopBarPos.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\IncludedCommands.inc" />
@@ -217,6 +217,8 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Settings\Config\MainConfig.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Folder\Config\FolderConfig.inc" />
             </Folder>
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Update\Update0.ini" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Update\Update1.ini" />
         </Folder>
         <Folder name="Windows">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\FunctionSetting.ini" />
@@ -229,6 +231,7 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\CommandBuilder.Create.ini" />
             <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\AppName.Create.ini" />
             <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\UpdateDroptop.ini" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\DownloadUpdates.ini" />
         </Folder>
         <Folder name="Power">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\PowerMenu\dialogLock.ini" />
