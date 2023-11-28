@@ -32,7 +32,7 @@ IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 [PSRM.ReplaceInFile]
 Measure=Plugin
 Plugin=PowershellRM
-Line=$replace1 = '\\thomas.whittaker\\'; $replace2 = '\carib\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
+Line=$replace1 = 'C:\\Users\\.*?\\'; $replace2 = 'C:\Users\%USERNAME%\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
 Line2=function Run() { iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex }
 OnChangeAction=
 UpdateDivider=-1
