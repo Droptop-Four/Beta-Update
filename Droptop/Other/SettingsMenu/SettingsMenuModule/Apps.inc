@@ -1,5 +1,5 @@
 [Rainmeter]
-MouseLeaveAction=#ResetActiveFolders#[!SetVariable FolderMode 0]
+MouseLeaveAction=#ResetActiveFolders#[!CommandMeasure MeasureActionTimer "Stop 1"][!CommandMeasure MeasureActionTimer "Stop 2"][!SetVariable FolderMode 0]
 
 [Variables]
 CurrentFolder=5
@@ -40,17 +40,47 @@ String=[#CustomAppID5]
 Substitute="_":" ","-":" - "
 DynamicVariables=1
 
+[MeasureAppName6]
+Measure=String
+String=[#CustomAppID6]
+Substitute="_":" ","-":" - "
+DynamicVariables=1
+
+[MeasureAppName7]
+Measure=String
+String=[#CustomAppID7]
+Substitute="_":" ","-":" - "
+DynamicVariables=1
+
+[MeasureAppName8]
+Measure=String
+String=[#CustomAppID8]
+Substitute="_":" ","-":" - "
+DynamicVariables=1
+
+[MeasureAppName9]
+Measure=String
+String=[#CustomAppID9]
+Substitute="_":" ","-":" - "
+DynamicVariables=1
+
+[MeasureAppName10]
+Measure=String
+String=[#CustomAppID10]
+Substitute="_":" ","-":" - "
+DynamicVariables=1
+
 [DisabledApp]
-ImageAlpha=75
-FontColor=#DropdownFontColor1#,75
+ImageAlpha=(#DropdownItemOpacity#/3)
+FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#/3)
 MouseOverAction=[!UpdateMeter FolderBlock][!Redraw]
 MouseLeaveAction=[]
-FillColor=Fill Color #DropdownFontColor1#,75
+FillColor=Fill Color #DropdownFontColor1#,(#DropdownItemOpacity#/3)
 
 [Background2]
 Meter=Shape
 MeterStyle=BackgroundStyle
-Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*5+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
+Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*10+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
 ; Y=([Background:YH]+(3*#DroptopSize#))
 MouseOverAction=[!SetVariable FolderMode 1]
 MouseLeaveAction=[!SetVariable FolderMode 0]
@@ -62,7 +92,7 @@ Y=([Background2:YH]+(3*#DroptopSize#))
 ;---
 
 [CommunityAppStyle0]
-MouseOverAction=[!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentComApp [#CommunityApp[#CURRENTSECTION]]][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!Delay [#FolderMouseOverTime[#FolderMouseOverTimeNum]]][#ActivateSubFolderC[#[#CURRENTSECTION]FolderActive]]
+MouseOverAction=[!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentComApp [#CommunityApp[#CURRENTSECTION]]][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!UpdateMeasure MeasureActionTimer][!CommandMeasure MeasureActionTimer "Execute 2"]
 
 [CommunityAppStyle1]
 FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#/3)
@@ -73,101 +103,191 @@ MouseLeaveAction=[!EnableMouseAction #CURRENTSECTION# "LeftMouseDownAction"]
 ImageAlpha=255
 
 [DisabledComApp1]
-ImageAlpha=75
-FontColor=#DropdownFontColor1#,75
+ImageAlpha=(#DropdownItemOpacity#/3)
+FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#/3)
 MouseOverAction=[!UpdateMeter FolderBlock][!Redraw]
 MouseLeaveAction=[]
-FillColor=Fill Color #DropdownFontColor1#,75
+FillColor=Fill Color #DropdownFontColor1#,(#DropdownItemOpacity#/3)
 
-[23]
+[13]
 MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp1]
 Hidden=0
 Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
-LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID1]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"]
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID1]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"]
 Text=[MeasureAppName1]
 
-[23Icon]
+[13Icon]
 MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp1]
 ImageCrop=-16,-16,32,32,5
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID1]\Button\Medium\Button.png
 Hidden=0
-Y=[23:Y]
+Y=[13:Y]
 
-[23Arrow]
+[13Arrow]
 MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp1]
 Hidden=0
-Y=[23:Y]
+Y=[13:Y]
 
 ;---
 
-[24]
+[14]
 MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp2]
 Hidden=0
-LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID2]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"]
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID2]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"]
 Text=[MeasureAppName2]
 
-[24Icon]
+[14Icon]
 MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp2]
 ImageCrop=-16,-16,32,32,5
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID2]\Button\Medium\Button.png
 Hidden=0
 
-[24Arrow]
+[14Arrow]
 MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp2]
 Hidden=0
 
 ;---
 
-[25]
+[15]
 MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp3]
 Hidden=0
-LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID3]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"]
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID3]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"]
 Text=[MeasureAppName3]
 
-[25Icon]
+[15Icon]
 MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp3]
 ImageCrop=-16,-16,32,32,5
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID3]\Button\Medium\Button.png
 Hidden=0
 
-[25Arrow]
+[15Arrow]
 MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp3]
 Hidden=0
 
 ;---
 
-[26]
+[16]
 MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp4]
 Hidden=0
-LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID4]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"]
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID4]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"]
 Text=[MeasureAppName4]
 
-[26Icon]
+[16Icon]
 MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp4]
 ImageCrop=-16,-16,32,32,5
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID4]\Button\Medium\Button.png
 Hidden=0
 
-[26Arrow]
+[16Arrow]
 MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp4]
 Hidden=0
 
 ;---
 
-[27]
+[17]
 MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp5]
 Hidden=0
-LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID5]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"]
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID5]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"]
 Text=[MeasureAppName5]
 
-[27Icon]
+[17Icon]
 MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp5]
 ImageCrop=-16,-16,32,32,5
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID5]\Button\Medium\Button.png
 Hidden=0
 
-[27Arrow]
+[17Arrow]
 MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp5]
+Hidden=0
+
+;---
+
+[18]
+MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp6]
+Hidden=0
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID6]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID6]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID6]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID6]\Settings"]
+Text=[MeasureAppName6]
+
+[18Icon]
+MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp6]
+ImageCrop=-16,-16,32,32,5
+ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID6]\Button\Medium\Button.png
+Hidden=0
+
+[18Arrow]
+MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp6]
+Hidden=0
+
+;---
+
+[19]
+MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp7]
+Hidden=0
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID7]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID7]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID7]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID7]\Settings"]
+Text=[MeasureAppName7]
+
+[19Icon]
+MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp7]
+ImageCrop=-16,-16,32,32,5
+ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID7]\Button\Medium\Button.png
+Hidden=0
+
+[19Arrow]
+MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp7]
+Hidden=0
+
+;---
+
+[20]
+MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp8]
+Hidden=0
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID8]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID8]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID8]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID8]\Settings"]
+Text=[MeasureAppName8]
+
+[20Icon]
+MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp8]
+ImageCrop=-16,-16,32,32,5
+ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID8]\Button\Medium\Button.png
+Hidden=0
+
+[20Arrow]
+MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp8]
+Hidden=0
+
+;---
+
+[21]
+MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp9]
+Hidden=0
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID9]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID9]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID9]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID9]\Settings"]
+Text=[MeasureAppName9]
+
+[21Icon]
+MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp9]
+ImageCrop=-16,-16,32,32,5
+ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID9]\Button\Medium\Button.png
+Hidden=0
+
+[21Arrow]
+MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp9]
+Hidden=0
+
+;---
+
+[22]
+MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp10]
+Hidden=0
+LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID10]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID10]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID10]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID10]\Settings"]
+Text=[MeasureAppName10]
+
+[22Icon]
+MeterStyle=IconStyle | DisabledComApp[#HideAppCustomApp10]
+ImageCrop=-16,-16,32,32,5
+ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID10]\Button\Medium\Button.png
+Hidden=0
+
+[22Arrow]
+MeterStyle=ArrowStyle | DisabledComApp[#HideAppCustomApp10]
 Hidden=0
 
 ;---
@@ -185,19 +305,6 @@ Y=[1:Y]
 MeterStyle=ArrowStyle | DisabledApp
 Y=[1:Y]
 
-;---
-
-[2]
-MeterStyle=InfoStyle | DisabledApp
-
-[2Icon]
-MeterStyle=IconStyle | DisabledApp
-
-[2Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-
-;---
-
 [3]
 MeterStyle=InfoStyle | DisabledApp
 
@@ -206,251 +313,3 @@ MeterStyle=IconStyle | DisabledApp
 
 [3Arrow]
 MeterStyle=ArrowStyle | DisabledApp
-
-;---
-
-[4]
-MeterStyle=InfoStyle | DisabledApp
-
-[4Icon]
-MeterStyle=IconStyle | DisabledApp
-
-[4Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-
-;---
-
-[7]
-MeterStyle=InfoStyle | DisabledApp
-
-[7Icon]
-MeterStyle=IconStyle | DisabledApp
-
-[7Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-
-;---
-
-[15]
-MeterStyle=InfoStyle
-
-[15Icon]
-MeterStyle=IconStyle
-
-[15Arrow]
-MeterStyle=ArrowStyle
-
-;---
-
-[16]
-MeterStyle=InfoStyle | DisabledApp
-
-[16Icon]
-MeterStyle=IconStyle | DisabledApp
-
-[16Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-
-;---
-
-[17]
-MeterStyle=InfoStyle
-Text=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[#22Icon]]
-MouseOverAction=[!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentSubFolder 22][!SetVariable CurrentFolder 22][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!Delay [#FolderMouseOverTime[#FolderMouseOverTimeNum]]][#ActivateSubFolder[#[##CURRENTSECTION#]FolderActive][#FolderMode]]
-MouseLeaveAction=[!SetVariable [##CURRENTSECTION#]FolderActive 0][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!HideMeterGroup Highlight][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!Redraw]
-
-[17Icon]
-ImageName=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].22.Icon]
-ImageAlpha=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].22.IconAlpha]
-ImageFlip=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].22.IconFlip]
-MeterStyle=IconStyle
-
-[17Arrow]
-MeterStyle=ArrowStyle
-
-;---
-
-[18]
-MeterStyle=InfoStyle | DisabledApp
-Hidden=1
-
-[18Icon]
-MeterStyle=IconStyle | DisabledApp
-ImageName=
-Hidden=1
-
-[18Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-Hidden=1
-
-;---
-
-[19]
-MeterStyle=InfoStyle | DisabledApp
-Hidden=1
-
-[19Icon]
-MeterStyle=IconStyle | DisabledApp
-ImageName=
-Hidden=1
-
-[19Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-Hidden=1
-
-;---
-
-[20]
-MeterStyle=InfoStyle | DisabledApp
-Hidden=1
-
-[20Icon]
-MeterStyle=IconStyle | DisabledApp
-ImageName=
-Hidden=1
-
-[20Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-Hidden=1
-
-;---
-
-[21]
-MeterStyle=InfoStyle | DisabledApp
-Hidden=1
-
-[21Icon]
-MeterStyle=IconStyle | DisabledApp
-ImageName=
-Hidden=1
-
-[21Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-Hidden=1
-
-;---
-
-[22]
-MeterStyle=InfoStyle | DisabledApp
-Hidden=0
-Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#+(#DropdownItemHeight#*16)+[Background2:YH]+(3*#DroptopSize#))
-Text=
-
-[22Icon]
-MeterStyle=IconStyle | DisabledApp
-ImageName=
-Hidden=1
-
-[22Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-Hidden=1
-
-;---
-
-; [Background2]
-; Meter=Shape
-; MeterStyle=BackgroundStyle
-; Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*5+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
-; Y=([Background:YH]+(3*#DroptopSize#))
-; DynamicVariables=1
-
-; ;---
-
-; [CommunityAppStyle]
-; MouseOverAction=[!SetVariable CurrentComApp [#CommunityApp[#CURRENTSECTION]]][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!Delay [#FolderMouseOverTime[#FolderMouseOverTimeNum]]][#ActivateSubFolderC[#[#CURRENTSECTION]FolderActive][#FolderMode]]
-
-; [23]
-; MeterStyle=InfoStyle | CommunityAppStyle
-; Hidden=0
-; Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#))
-; LeftMouseDownAction=[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID1]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]) "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"]
-; Text=[#CustomAppID1]
-
-; [23Icon]
-; MeterStyle=IconStyle
-; ImageCrop=-16,-16,32,32,5
-; ImageAlpha=255
-; ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID1]\Button\Medium\Button.png
-; Hidden=0
-; Y=[23:Y]
-
-; [23Arrow]
-; MeterStyle=ArrowStyle
-; Hidden=0
-; Y=[23:Y]
-
-; ;---
-
-; [24]
-; MeterStyle=InfoStyle | CommunityAppStyle
-; Hidden=0
-; LeftMouseDownAction=[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID2]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]) "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID2]\Settings"]
-; Text=[#CustomAppID2]
-
-; [24Icon]
-; MeterStyle=IconStyle
-; ImageCrop=-16,-16,32,32,5
-; ImageAlpha=255
-; ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID2]\Button\Medium\Button.png
-; Hidden=0
-
-; [24Arrow]
-; MeterStyle=ArrowStyle
-; Hidden=0
-
-; ;---
-
-; [25]
-; MeterStyle=InfoStyle | CommunityAppStyle
-; Hidden=0
-; LeftMouseDownAction=[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID3]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]) "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID3]\Settings"]
-; Text=[#CustomAppID3]
-
-; [25Icon]
-; MeterStyle=IconStyle
-; ImageCrop=-16,-16,32,32,5
-; ImageAlpha=255
-; ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID3]\Button\Medium\Button.png
-; Hidden=0
-
-; [25Arrow]
-; MeterStyle=ArrowStyle
-; Hidden=0
-
-; ;---
-
-; [26]
-; MeterStyle=InfoStyle | CommunityAppStyle
-; Hidden=0
-; LeftMouseDownAction=[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID4]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]) "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID4]\Settings"]
-; Text=[#CustomAppID4]
-
-; [26Icon]
-; MeterStyle=IconStyle
-; ImageCrop=-16,-16,32,32,5
-; ImageAlpha=255
-; ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID4]\Button\Medium\Button.png
-; Hidden=0
-
-; [26Arrow]
-; MeterStyle=ArrowStyle
-; Hidden=0
-
-; ;---
-
-; [27]
-; MeterStyle=InfoStyle | CommunityAppStyle
-; Hidden=0
-; LeftMouseDownAction=[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup CustomAppAll][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID5]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]) "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID5]\Settings"]
-; Text=[#CustomAppID5]
-
-; [27Icon]
-; MeterStyle=IconStyle
-; ImageCrop=-16,-16,32,32,5
-; ImageAlpha=255
-; ImageName=#SKINSPATH#Droptop Community Apps\Apps\[#CustomAppID5]\Button\Medium\Button.png
-; Hidden=0
-
-; [27Arrow]
-; MeterStyle=ArrowStyle
-; Hidden=0

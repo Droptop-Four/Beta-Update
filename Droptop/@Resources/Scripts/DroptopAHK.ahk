@@ -12,6 +12,23 @@ ExitApp
 
 ;----------
 
+ToggleCapsLock:
+ SetStoreCapsLockMode, Off
+ Send, {CapsLock}
+ExitApp
+
+ToggleNumLock:
+ SetStoreCapsLockMode, Off
+ Send, {NumLock}
+ExitApp
+
+ToggleScrollLock:
+ SetStoreCapsLockMode, Off
+ Send, {ScrollLock}
+ExitApp
+
+;----------
+
 WindowsSearch:
  SetStoreCapsLockMode, Off
  Send, #s
@@ -61,6 +78,11 @@ AppDrawer:
  Send, {Esc}
  Send, #b
  Send, {Space}
+ExitApp
+
+CloseAppDrawer:
+ Send, #b
+ Send, {Esc}
 ExitApp
 
 QuickSettings:
@@ -151,6 +173,50 @@ ExitApp
 CloseDesktop:
  SetStoreCapsLockMode, Off
  Send, #^{f4}
+ExitApp
+
+;----------
+
+WebBack:
+ SetStoreCapsLockMode, Off
+ Send, !{Left}
+ExitApp
+
+WebForward:
+ SetStoreCapsLockMode, Off
+ Send, !{Right}
+ExitApp
+
+WebRefresh:
+ SetStoreCapsLockMode, Off
+ Send, ^r
+ExitApp
+
+WebCapture:
+ SetStoreCapsLockMode, Off
+ Send, ^+s
+ExitApp
+
+HideWebView:
+ WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
+ ; WinHide %2%
+ExitApp
+
+;----------
+
+MediaPlayPause:
+ SetStoreCapsLockMode, Off
+ Send, {Media_Play_Pause}
+ExitApp
+
+MediaPrev:
+ SetStoreCapsLockMode, Off
+ Send, {Media_Prev}
+ExitApp
+
+MediaNext:
+ SetStoreCapsLockMode, Off
+ Send, {Media_Next}
 ExitApp
 
 ;----------
