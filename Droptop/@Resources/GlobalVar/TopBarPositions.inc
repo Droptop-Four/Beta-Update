@@ -126,7 +126,7 @@ SideAppPosCustomApp4=16
 SideAppPosCustomApp5=17
 SideAppPosCustomApp6=18
 SideAppPosCustomApp7=19
-SideAppPosCustomApp8=18
+SideAppPosCustomApp8=20
 SideAppPosCustomApp9=21
 SideAppPosCustomApp10=22
 

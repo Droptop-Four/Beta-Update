@@ -19,7 +19,6 @@ Feeder-Cariboudjan
 Headlines-Cariboudjan
 GSuite-Cariboudjan
 Translator-Bunz
-<<<<<<< HEAD
 SearchBar-Mike_Boynton
 WakaTime-Bunz
 ToolTipster-TheyCallMePapa
@@ -30,6 +29,3 @@ PC_Scanner-TheyCallMePapa
 Multiples_Mails-KazukiGames82
 KeysLocks-KazukiGames82
 Dynamic_Infos-KazukiGames82
-=======
-SearchBar-Mike_Boynton
->>>>>>> 8f32c7cebb82ff9b2f1df730c2523fd3960156d8
