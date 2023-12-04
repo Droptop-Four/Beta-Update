@@ -132,22 +132,17 @@
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-TW.inc" />
         </Folder>
         <Folder name="App Buttons">
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Action.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Alarm.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\AppDrawer.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Assistant.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Battery.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Copy.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Downloads.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Language.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Mail.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\NewDesktop.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Recent.ini" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Search.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Time.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Alarm.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Volume.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Mail.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Weather.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Battery.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Wifi.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Downloads.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Recent.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Copy.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\MonD.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\CustomApp1.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\CustomApp2.ini" />
@@ -159,6 +154,7 @@
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\CustomApp8.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\CustomApp9.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\CustomApp10.ini" />
+            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\AppDrawer.ini" />
         </Folder>
         <Folder name="Droptop Apps">
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Time\Time.ini" />

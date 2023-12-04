@@ -4,11 +4,16 @@ MouseLeaveAction=#ResetActiveFolders#[!CommandMeasure MeasureActionTimer "Stop 1
 [Variables]
 CurrentFolder=5
 
-CommunityApp23=[#*CustomAppID1*]
-CommunityApp24=[#*CustomAppID2*]
-CommunityApp25=[#*CustomAppID3*]
-CommunityApp26=[#*CustomAppID4*]
-CommunityApp27=[#*CustomAppID5*]
+CommunityApp13=[#*CustomAppID1*]
+CommunityApp14=[#*CustomAppID2*]
+CommunityApp15=[#*CustomAppID3*]
+CommunityApp16=[#*CustomAppID4*]
+CommunityApp17=[#*CustomAppID5*]
+CommunityApp18=[#*CustomAppID6*]
+CommunityApp19=[#*CustomAppID7*]
+CommunityApp20=[#*CustomAppID8*]
+CommunityApp21=[#*CustomAppID9*]
+CommunityApp22=[#*CustomAppID10*]
 
 [MeasureAppName1]
 Measure=String
@@ -82,8 +87,8 @@ Meter=Shape
 MeterStyle=BackgroundStyle
 Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*10+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
 ; Y=([Background:YH]+(3*#DroptopSize#))
-MouseOverAction=[!SetVariable FolderMode 1]
-MouseLeaveAction=[!SetVariable FolderMode 0]
+; MouseOverAction=[!SetVariable FolderMode 1]
+; MouseLeaveAction=[!SetVariable FolderMode 0]
 DynamicVariables=1
 
 [Background]
@@ -92,11 +97,11 @@ Y=([Background2:YH]+(3*#DroptopSize#))
 ;---
 
 [CommunityAppStyle0]
-MouseOverAction=[!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentComApp [#CommunityApp[#CURRENTSECTION]]][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!UpdateMeasure MeasureActionTimer][!CommandMeasure MeasureActionTimer "Execute 2"]
+MouseOverAction=[!SetVariable FolderMode 1][!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentComApp [#CommunityApp[#CURRENTSECTION]]][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!UpdateMeasure MeasureActionTimer][!CommandMeasure MeasureActionTimer "Execute 2"]
 
 [CommunityAppStyle1]
 FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#/3)
-MouseOverAction=[!DisableMouseAction #CURRENTSECTION# "LeftMouseDownAction"]
+MouseOverAction=[!SetVariable FolderMode 0][!DisableMouseAction #CURRENTSECTION# "LeftMouseDownAction"]
 MouseLeaveAction=[!EnableMouseAction #CURRENTSECTION# "LeftMouseDownAction"]
 
 [DisabledComApp0]
@@ -293,7 +298,7 @@ Hidden=0
 ;---
 
 [1]
-MeterStyle=InfoStyle | DisabledApp
+MeterStyle=InfoStyle
 Y=([Background:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#))
 DynamicVariables=1
 
@@ -301,15 +306,15 @@ DynamicVariables=1
 MeterStyle=IconStyle | DisabledApp
 Y=[1:Y]
 
-[1Arrow]
-MeterStyle=ArrowStyle | DisabledApp
-Y=[1:Y]
+; [1Arrow]
+; MeterStyle=ArrowStyle | DisabledApp
+; Y=[1:Y]
 
-[3]
-MeterStyle=InfoStyle | DisabledApp
+; [3]
+; MeterStyle=InfoStyle | DisabledApp
 
-[3Icon]
-MeterStyle=IconStyle | DisabledApp
+; [3Icon]
+; MeterStyle=IconStyle | DisabledApp
 
-[3Arrow]
-MeterStyle=ArrowStyle | DisabledApp
+; [3Arrow]
+; MeterStyle=ArrowStyle | DisabledApp
