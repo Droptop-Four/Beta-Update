@@ -392,7 +392,7 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_App-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 del /f /q %4Droptop\@Resources\Images\Media\Cover.png"
-REM del /f /q %4Droptop\@Resources\Images\Media\CoverBlur.png"
+del /f /q %4Droptop\@Resources\Images\Media\CoverBlur.png"
 call %4Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" %4
 reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "#PROGRAMPATH#Rainmeter.exe" /t "REG_SZ" /d "" /f
 cd %4Droptop\@Resources\Scripts\ImageMagick" & convert %4Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" "Wallpaper1.png" & convert %4Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" -crop 9999x100+0+0 "WallpaperCropped.png" & convert "WallpaperCropped.png" -blur 0x3 "Wallpaper1.0.png" & convert "WallpaperCropped.png" -blur 0x8 "Wallpaper1.1.png" & del /f /q "WallpaperCropped.png" & xcopy /E /I /Y "Wallpaper*.png" %4Droptop\Other\WindowMenu\WallpaperCache" & xcopy /E /I /Y "Wallpaper*.png" %4Droptop Folders\Other files\Themes" & del /f /q "*.png" & taskkill /f /im "convert.exe" & taskkill /f /im "mogrify.exe"
