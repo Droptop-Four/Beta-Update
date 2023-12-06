@@ -389,6 +389,8 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CategoryNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SubCatNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables VarNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
+xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_App-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
+xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 del /f /q %4Droptop\@Resources\Images\Media\Cover.png"
 REM del /f /q %4Droptop\@Resources\Images\Media\CoverBlur.png"
 call %4Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" %4
