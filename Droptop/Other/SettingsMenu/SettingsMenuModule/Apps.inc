@@ -2,6 +2,9 @@
 MouseLeaveAction=#ResetActiveFolders#[!CommandMeasure MeasureActionTimer "Stop 1"][!CommandMeasure MeasureActionTimer "Stop 2"][!SetVariable FolderMode 0]
 
 [Variables]
+@IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
+@IncludeTopBarPositions=#@#GlobalVar\TopBarPositions.inc
+
 CurrentFolder=5
 
 CommunityApp13=[#*CustomAppID1*]
