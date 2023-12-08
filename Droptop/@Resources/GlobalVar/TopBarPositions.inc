@@ -2,8 +2,8 @@
 
 SlotFolderApplication=-1
 
-SlotFolder1=1
-SlotFolder2=2
+SlotFolder1=2
+SlotFolder2=1
 SlotFolder3=3
 SlotFolder4=4
 SlotFolder5=5
