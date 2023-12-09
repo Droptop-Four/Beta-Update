@@ -1,4 +1,5 @@
 [Rainmeter]
+SkinHeight=((#DropdownMenuCutout#*3)+((3*#DroptopSize#)*2)+((#DropdownItemHeight#*(((#HideAppCustomApp1#+#HideAppCustomApp2#+#HideAppCustomApp3#+#HideAppCustomApp4#+#HideAppCustomApp5#+#HideAppCustomApp6#+#HideAppCustomApp7#+#HideAppCustomApp8#+#HideAppCustomApp9#+#HideAppCustomApp10#)-10)*-1))+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2))+(#DropdownItemHeight#*#NumberOfItems#+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2))+((#DropdownItemHeight#*1)+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2))+(#DropdownStrokeWidth#*3))
 MouseLeaveAction=#ResetActiveFolders#[!CommandMeasure MeasureActionTimer "Stop 1"][!CommandMeasure MeasureActionTimer "Stop 2"][!SetVariable FolderMode 0]
 
 [Variables]
@@ -85,12 +86,22 @@ MouseOverAction=[!UpdateMeter FolderBlock][!Redraw]
 MouseLeaveAction=[]
 FillColor=Fill Color #DropdownFontColor1#,(#DropdownItemOpacity#/3)
 
+[Background3]
+Meter=Shape
+MeterStyle=BackgroundStyle
+; Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*10+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
+Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),((#DropdownItemHeight#*1)+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
+; Y=([Background:YH]+(3*#DroptopSize#))
+; MouseOverAction=[!SetVariable FolderMode 1]
+; MouseLeaveAction=[!SetVariable FolderMode 0]
+DynamicVariables=1
+
 [Background2]
 Meter=Shape
 MeterStyle=BackgroundStyle
 ; Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*10+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
 Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),((#DropdownItemHeight#*(((#HideAppCustomApp1#+#HideAppCustomApp2#+#HideAppCustomApp3#+#HideAppCustomApp4#+#HideAppCustomApp5#+#HideAppCustomApp6#+#HideAppCustomApp7#+#HideAppCustomApp8#+#HideAppCustomApp9#+#HideAppCustomApp10#)-10)*-1))+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
-; Y=([Background:YH]+(3*#DroptopSize#))
+Y=([Background3:YH]+(3*#DroptopSize#))
 ; MouseOverAction=[!SetVariable FolderMode 1]
 ; MouseLeaveAction=[!SetVariable FolderMode 0]
 DynamicVariables=1
@@ -120,9 +131,27 @@ MouseLeaveAction=[]
 FillColor=Fill Color #DropdownFontColor1#,(#DropdownItemOpacity#/3)
 Hidden=1
 
+[0]
+Meter=String
+MeterStyle=InfoStyle
+Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
+Text=#Context3Item1#
+LeftMouseDownAction=[!SetVariable ActiveFolder 0 "Droptop\DropdownBar"][!SetVariable ActiveTray 0 "Droptop\DropdownBar"][!CommandMeasure MeasureActionTimer "Execute 2" "Droptop\Other\PowerMenu"][!HideMeterGroup HighlightSelected "Droptop\DropdownBar"][!HideGroup ContextBox][!HideGroup SM1][!HideGroup CustomAppAll][!ActivateConfig "Droptop\DropdownBar\Other\ContextBox" "ContextBox3.ini"][!SetWindowPosition "#DropdownContextMenuYOffset#" "#TopHeight#+#DropdownContextMenuYOffset#" "0%" "0%" "Droptop\DropdownBar\Other\ContextBox"][!HideGroup Folders][!HideGroup Tray][!HideGroup WebView][!Redraw "Droptop\DropdownBar"][!#Show# "Droptop\DropdownBar\Other\ContextBox"]
+MouseOverAction=[!SetVariable [##CURRENTSECTION#]FolderActive 0][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw]
+Hidden=0
+
+[0Icon]
+Meter=Image
+MeterStyle=IconStyle
+ImageName=#@#Icons\Fixed\#IconSize#\apps.png
+ImageAlpha=#DropdownItemOpacity#
+Y=[0:Y]
+Hidden=0
+
 [13]
 MeterStyle=InfoStyle | CommunityAppStyle[#HideAppCustomApp1]
-Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
+Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#))
+; Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
 LeftMouseDownAction=#ResetActiveFolders#[!HideGroup CustomAppAll][!HideGroup SM[NextBlock]][!DeactivateConfigGroup NonWebView][!SetVariable HighlightSelectedY [#CurrentFolder#:Y]][!UpdateMeter HighlightSelected][!ShowMeter HighlightSelected][!Redraw][!Delay 105][!ActivateConfig "Droptop Community Apps\Apps\[#CustomAppID1]\Settings" "Settings.ini"][!Refresh "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!Move ([#CURRENTCONFIGX]+#DropdownMenuWidth#+#DropdownSubMenuXOffset#) ([#CURRENTCONFIGY]+[#CURRENTSECTION#:Y]-(#DropdownIconYoffset#+#DropdownItemYOffset#+1)) "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"][!#Show# "Droptop Community Apps\Apps\[#CustomAppID1]\Settings"]
 Text=[MeasureAppName1]
 Hidden=#HideAppCustomApp1#
@@ -297,7 +326,122 @@ Hidden=#HideAppCustomApp10#
 MeterStyle=InfoStyle
 Y=([Background:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#))
 DynamicVariables=1
-
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
 [1Icon]
-MeterStyle=IconStyle
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
 Y=[1:Y]
+Group=None
+[1Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[2]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[2Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[2Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[3]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[3Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[3Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[4]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[4Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[4Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[5]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[5Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[5Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[6]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[6Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[6Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[7]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[7Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[7Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[8]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[8Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[8Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[9]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[9Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[9Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[10]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[10Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[10Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[11]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[11Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[11Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+
+[12]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[12Icon]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
+[12Arrow]
+Hidden=[#HideApp[#SideAppName[##CURRENTSECTION#]]]
+Group=None
