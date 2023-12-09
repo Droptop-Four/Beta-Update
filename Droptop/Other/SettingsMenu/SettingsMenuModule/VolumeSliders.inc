@@ -2,7 +2,7 @@
 
 [Variables]
 
-SettingsMenuNumber=1.6.8.3
+; SettingsMenuNumber=1.6.8.3
 
 ; -------------------------
 

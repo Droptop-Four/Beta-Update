@@ -20,7 +20,9 @@ DynamicVariables=1
 [IconCircle]
 Meter=Shape
 MeterStyle=IconStyle
-Shape=Ellipse 0,0,#IconW# | FillColor #Lime2#,55 | Stroke Color #Lime2# | StrokeWidth (3*#DroptopSize#)
+Shape=Ellipse 0,0,#IconW# | Fill RadialGradient Infill1 | Stroke Color #Lime2#,205 | StrokeWidth (3*#DroptopSize#)
+Shape2=Ellipse 0,0,(#IconW#+((3*#DroptopSize#)/2)) | FillColor 0,0,0,0 | Stroke Color 0,55,0,25 | StrokeWidth 1#)
+Infill1=0,0 | #Lime2#,55 ; 0.7 | 0,55,0,155 ; 1.0
 X=([1Icon:X]+(#IconW#/2))
 Y=([1Icon:Y]+(#IconH#/2))
 H=1
