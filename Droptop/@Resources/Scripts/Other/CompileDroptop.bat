@@ -530,13 +530,10 @@ del /f %4Redistributables\Supporter-Version\Skins\Droptop\@Resources\GlobalVar\T
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 100 %4Droptop\Other\Startup\Start.ini"
 RD /S /Q %4Redistributables\Update\Skins\Droptop"
 robocopy %4Droptop" %4Redistributables\Update\Skins\Droptop" /E
-@echo Update Version Complete
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 1 %4Droptop\@Resources\GlobalVar\Control.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 0 %4Droptop\@Resources\GlobalVar\Supporter.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 100 %4Droptop\Other\Startup\Start.ini"
 RD /S /Q %4Redistributables\Beta-Update\Skins\Droptop"
 robocopy %4Droptop" %4Redistributables\Beta-Update\Skins\Droptop" /E
+@echo Update Version Complete
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 1 %4Redistributables\Beta-Update\Skins\Droptop\@Resources\GlobalVar\Control.inc"
 @echo Beta Version Complete
 attrib -h /s %4Redistributables\Basic-Version\Skins\Droptop Folders\desktop.ini"
 attrib -s /d /s %4Redistributables\Basic-Version\Skins\Droptop Folders\Games\*"
