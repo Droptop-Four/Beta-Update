@@ -571,7 +571,7 @@ xcopy /E /I /Y %4Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Document
 xcopy /E /I /Y %4Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 
 REM "%USERPROFILE%\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
+REM "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 
