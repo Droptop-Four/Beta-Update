@@ -249,7 +249,6 @@
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\ContextBoxMeters.inc" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\SystemTraySubMenuMeters.inc" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\SettingsSubMenuMeters.inc" />
-            <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\MenubarInfoMeters.inc" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\PowerMenuMeters.inc" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MonitorBrightness0.ini" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\WindowMeters.inc" />
@@ -342,7 +341,6 @@
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1" />
                 <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateCommands.ps1" />
                 <File name="XcopyExclude.txt" />
-                <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\BarModifier\AutoBarModifier.ps1" />
             </Folder>
         </Folder>
         <Folder name="Other">
