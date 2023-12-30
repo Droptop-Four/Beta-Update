@@ -79,3 +79,11 @@ Group=VariantIcon
 MeterStyle=IconStyle | VariantIconStyle
 ImageName=#@#TopImages\[#SideAppName[#PopupModuleIndex]]\Medium\3\[#SideAppName[#PopupModuleIndex]].png
 Group=VariantIcon
+
+;dummy
+[1Arrow]
+Meter=String
+Hidden=1
+[2Arrow]
+Meter=String
+Hidden=1

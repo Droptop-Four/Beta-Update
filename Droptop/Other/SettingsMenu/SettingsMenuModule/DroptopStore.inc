@@ -7,6 +7,10 @@
 DropdownItemPadding1=((#DropdownIconPadding#*3)+#IconW#)
 DropdownItemHeight=(#DropdownItemFontSize#*7)
 
+[IconStyle]
+ImageName=
+ImageFlip=None
+
 [1Match]
 Measure=String
 String=Droptop_Store-Bunz
@@ -28,3 +32,6 @@ Y=([1Icon:Y]+(#IconH#/2))
 H=1
 DynamicVariables=1
 Hidden=0
+
+[1Icon]
+ImageName=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#].Icon]

@@ -28,3 +28,11 @@ LeftMouseDownAction=[!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#Po
 ImageName=#@#Icons\Fixed\#IconSize#\toggle.png
 ImageAlpha=((#DropdownItemOpacity#/3)+((255-(#DropdownItemOpacity#/3))*(([#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]-1)*-1)))
 ImageFlip=[#IconFlip1[#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]
+
+;dummy
+[1Arrow]
+Meter=String
+Hidden=1
+[2Arrow]
+Meter=String
+Hidden=1
