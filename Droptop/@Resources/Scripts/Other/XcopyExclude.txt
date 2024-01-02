@@ -31,3 +31,7 @@ KeysLocks-KazukiGames82
 Dynamic_Infos-KazukiGames82
 Sample_App-Cariboudjan
 Sample_WebView-Cariboudjan
+Microsoft_Copilot-Cariboudjan
+Google_Translate-Cariboudjan
+To_Do-Cariboudjan
+Steam-Cariboudjan
