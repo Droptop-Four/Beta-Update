@@ -469,6 +469,7 @@ RD /S /Q %4Redistributables\Basic-Version\Skins\Droptop\@Resources\TopImages\Hom
 RD /S /Q %4Redistributables\Basic-Version\Skins\Droptop\@Resources\TopImages\Home\32\Column17S"
 RD /S /Q %4Redistributables\Basic-Version\Skins\Droptop\@Resources\TopImages\Home\32\Column18S"
 RD /S /Q %4Redistributables\Basic-Version\Skins\Droptop\@Resources\TopImages\Home\32\Column19S"
+del /f /q %4Redistributables\Basic-Version\Skins\Droptop Folders\PinnedApps\*"
 @echo Basic Version Complete
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 1 %4Droptop\@Resources\GlobalVar\Supporter.inc"
