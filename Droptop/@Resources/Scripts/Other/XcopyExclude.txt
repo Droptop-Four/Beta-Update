@@ -35,3 +35,5 @@ Microsoft_Copilot-Cariboudjan
 Google_Translate-Cariboudjan
 To_Do-Cariboudjan
 Steam-Cariboudjan
+Media_Control-Yaron
+Color_Mode_Toggle-Cariboudjan
