@@ -27,6 +27,7 @@ Quick_Search-KazukiGames82
 Quick_Settings-Cariboudjan
 PC_Scanner-TheyCallMePapa
 Multiples_Mails-KazukiGames82
+Karmy-KazukiGames82
 KeysLocks-KazukiGames82
 Dynamic_Infos-KazukiGames82
 Sample_App-Cariboudjan
