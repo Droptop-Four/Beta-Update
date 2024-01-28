@@ -196,8 +196,7 @@ WebCapture:
 ExitApp
 
 HideWebView:
- WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
- ; WinHide %2%
+ ; WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
 ExitApp
 
 ;----------

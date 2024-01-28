@@ -52,8 +52,6 @@ Set objFolder11 = objShell.NameSpace(arg & "Droptop Folders\Bookmarks\Online too
 
 Set objFolder19 = objShell.NameSpace(arg & "Droptop Folders\Other files\PaperclipShortcuts")
 
-Set objFolder20 = objShell.NameSpace(arg & "Droptop Community Apps\Apps\Shortcut-Phan\Shortcuts")
-
 
 
 Set objFolderItem2 = objFolder.ParseName("Google Photos.url")
@@ -854,48 +852,6 @@ objShortcut186.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Sti
 
 
 
-' 'Shortcut app Shortcuts ###############################################################################################
-
-
-
-
-Set objFolderItem200 = objFolder20.ParseName("Calculator.lnk")
-
-Set objShortcut200 = objFolderItem200.GetLink
-
-objShortcut200.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Calculator.ico", 0
-
-
-
-
-Set objFolderItem201 = objFolder20.ParseName("Notepad.lnk")
-
-Set objShortcut201 = objFolderItem201.GetLink
-
-objShortcut201.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Notepad.ico", 0
-
-
-
-
-Set objFolderItem202 = objFolder20.ParseName("Paint 3D.lnk")
-
-Set objShortcut202 = objFolderItem202.GetLink
-
-objShortcut202.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Paint.ico", 0
-
-
-
-
-Set objFolderItem203 = objFolder20.ParseName("Sticky Notes.lnk")
-
-Set objShortcut203 = objFolderItem203.GetLink
-
-objShortcut203.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Sticky.ico", 0
-
-
-
-
-
 objShortcut2.Save
 
 objShortcut3.Save
@@ -1104,14 +1060,3 @@ objShortcut184.Save
 objShortcut185.Save
 
 objShortcut186.Save
-
-
-
-
-objShortcut200.Save
-
-objShortcut201.Save
-
-objShortcut202.Save
-
-objShortcut203.Save
