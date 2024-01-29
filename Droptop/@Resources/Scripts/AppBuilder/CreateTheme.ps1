@@ -9,6 +9,13 @@ Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplat
 Copy-Item "$skinspath\Droptop\@Resources\Themes\99.inc" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes" -Recurse
 Copy-Item "$skinspath\Droptop\@Resources\Themes\99Settings.inc" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes" -Recurse
 
+If ($PreviewImageUploaded -eq "1")
+{
+	Copy-Item "$skinspath\Droptop\@Resources\Scripts\ImageMagick\ThemePreviewImage.png" -Destination "$skinspath\Droptop\@Resources\Themes" -Recurse
+	Copy-Item "$skinspath\Droptop\@Resources\Scripts\ImageMagick\ThemePreviewImage.png" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes" -Recurse
+ 	Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\ImageMagick\*.png" -Recurse
+}
+
 # Get-ChildItem -Path "$skinspath\Droptop Folders\Other files\Themes\*" -Include ('*.ttf', '*.otf') -Exclude ('Community Font - *') -Recurse | Rename-Item -NewName {"Community Font - " + $_.Name}
 
 Copy-Item "$skinspath\Droptop Folders\Other files\Themes\*" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop Folders\Other files\Themes" -Recurse
