@@ -348,6 +348,7 @@ Else
 	WinSet, Transparent, 0, ahk_class NotifyIconOverflowWindow
 	ControlClick, %5%, ahk_class Shell_TrayWnd
 	WinMove, ahk_class NotifyIconOverflowWindow, , %TrueX%, %TrueY%
+    WinShow, ahk_class Shell_TrayWnd
 	WinSet, Transparent, OFF, ahk_class NotifyIconOverflowWindow
 loop 
 {
@@ -382,6 +383,7 @@ Else
     TrueY := Y-1.5
     WinSet, Transparent, 0, ahk_class TopLevelWindowForOverflowXamlIsland
     WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
+    WinShow, ahk_class Shell_TrayWnd
     WinSet, Transparent, OFF, ahk_class TopLevelWindowForOverflowXamlIsland
 loop 
 {
