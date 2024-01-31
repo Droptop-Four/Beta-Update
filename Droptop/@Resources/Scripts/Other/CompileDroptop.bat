@@ -472,7 +472,7 @@ RD /S /Q %4Redistributables\Basic-Version\Skins\Droptop\@Resources\TopImages\Hom
 RD /S /Q %4Redistributables\Basic-Version\Skins\Droptop\@Resources\TopImages\Home\32\Column19S"
 del /f /q %4Redistributables\Basic-Version\Skins\Droptop Folders\PinnedApps\*"
 @echo Basic Version Complete
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 1 %4Droptop\@Resources\GlobalVar\Supporter.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 99 %4Droptop\Other\Startup\Start.ini"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop"
@@ -528,7 +528,7 @@ del /f %4Redistributables\Supporter-Version\Skins\Droptop\@Resources\GlobalVar\U
 del /f %4Redistributables\Supporter-Version\Skins\Droptop\@Resources\GlobalVar\SettingsMenuOptions.inc"
 del /f %4Redistributables\Supporter-Version\Skins\Droptop\@Resources\GlobalVar\ThemeBuilderOptions.inc"
 @echo Supporter Version Complete
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 0 %4Droptop\@Resources\GlobalVar\Supporter.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 100 %4Droptop\Other\Startup\Start.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsUpdate 1 %4Droptop\@Resources\GlobalVar\Control.inc"

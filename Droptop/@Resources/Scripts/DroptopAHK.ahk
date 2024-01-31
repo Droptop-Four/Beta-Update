@@ -341,7 +341,6 @@ IfWinActive, ahk_class NotifyIconOverflowWindow
 	WinHide, ahk_class NotifyIconOverflowWindow
 Else 
 {
-    WinHide, ahk_class Shell_TrayWnd
 	ControlClick, %5%, ahk_class Shell_TrayWnd
 	WinGetPos,,,WidthOfTray,HeightOfTray,ahk_class NotifyIconOverflowWindow
 	TrueX := X-WidthOfTray/2
@@ -353,7 +352,6 @@ Else
 loop 
 {
 	WinMove, ahk_class NotifyIconOverflowWindow, , %TrueX%, %TrueY%
-    WinShow, ahk_class Shell_TrayWnd
 	IfWinNotActive, ahk_class NotifyIconOverflowWindow
 	ExitApp
 
