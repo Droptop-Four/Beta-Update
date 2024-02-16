@@ -330,6 +330,8 @@ ExitApp
 
 ;----------
 
+
+
 ;Windows 10 tray
 ActivateTray1:
 X = %2%
@@ -399,5 +401,7 @@ Else
         ExitApp
     }
 }
+
+
 
 ;----------
