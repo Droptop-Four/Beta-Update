@@ -330,8 +330,6 @@ ExitApp
 
 ;----------
 
-
-
 ;Windows 10 tray
 ActivateTray1:
 X = %2%
@@ -365,16 +363,18 @@ X = %2%
 Y = %3%
 direction = %4%
 clicbutton = %5%
+autohide = 0
 
 IfWinActive, ahk_class TopLevelWindowForOverflowXamlIsland
-{
     WinHide, ahk_class TopLevelWindowForOverflowXamlIsland
-    WinSet, Transparent, 0, ahk_class TopLevelWindowForOverflowXamlIsland
-    ExitApp
-}
 Else 
 {
-    WinHide, ahk_class Shell_TrayWnd
+    WinGetPos,,YOfTaskbar,,, ahk_class Shell_TrayWnd
+    If (YOfTaskbar = (A_ScreenHeight-2))
+    {
+        autohide = 1
+        WinHide, ahk_class Shell_TrayWnd
+    }
     Send, {Esc}
     Send, #b
     Send, {Space}
@@ -383,17 +383,21 @@ Else
     TrueY := Y-1.5
     WinSet, Transparent, 0, ahk_class TopLevelWindowForOverflowXamlIsland
     WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
-    WinShow, ahk_class Shell_TrayWnd
+    If (autohide = 1)
+    {
+        WinShow, ahk_class Shell_TrayWnd
+    }
     WinSet, Transparent, OFF, ahk_class TopLevelWindowForOverflowXamlIsland
-loop 
-{
-    WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
-    WinShow, ahk_class Shell_TrayWnd
-    IfWinNotActive, ahk_class TopLevelWindowForOverflowXamlIsland
-    ExitApp
+    loop
+    {
+        WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
+        If (autohide = 1)
+        {
+            WinShow, ahk_class Shell_TrayWnd
+        }
+        IfWinNotActive, ahk_class TopLevelWindowForOverflowXamlIsland 
+        ExitApp
+    }
 }
-}
-
-
 
 ;----------
