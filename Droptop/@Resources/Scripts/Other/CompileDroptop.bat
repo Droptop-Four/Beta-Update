@@ -297,7 +297,7 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppDownloads 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppRecent 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCopy 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppDrawer 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppAppDrawer 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp1 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp2 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp3 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -610,6 +610,7 @@ gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic
 
 git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 @echo All versions pushed successfully. Press any key to start Droptop setup...
 PAUSE
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
