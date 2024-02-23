@@ -575,6 +575,7 @@ attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsUpdate 0 %4Droptop\@Resources\GlobalVar\Control.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
@@ -610,7 +611,6 @@ gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic
 
 git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FirstLoad 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 @echo All versions pushed successfully. Press any key to start Droptop setup...
 PAUSE
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
