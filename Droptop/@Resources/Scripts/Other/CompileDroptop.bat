@@ -586,7 +586,6 @@ git config --global user.email "N/A"
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git checkout main
-git pull
 git add .
 git commit -m %2
 git push
@@ -601,7 +600,6 @@ PAUSE
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git checkout main
-git pull
 git add .
 git commit -m %2
 git push
