@@ -104,6 +104,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\None.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\DroptopStore.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\FontWeight.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\LanguageSelect.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
@@ -170,7 +171,6 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Downloads\Downloads.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Recent\Recent.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\MOND\MOND.ini" />
             <Folder name="Application Folders">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\AppControls.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder01.ini" />

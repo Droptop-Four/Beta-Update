@@ -391,6 +391,9 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables VarNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_App-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
+attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
+xcopy /y /c /e "%USERPROFILE%\Documents\GitHub\Community-Apps\*" %4Droptop Community Apps\Apps" 
+xcopy /y /c /h /e %4Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitHub\Community-Apps"
 del /f /q %4Droptop\@Resources\Images\Media\Cover.png"
 del /f /q %4Droptop\@Resources\Images\Media\CoverBlur.png"
 call %4Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" %4
@@ -591,6 +594,13 @@ git add .
 git commit -m %2
 git push
 gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See download link below (Droptop_Beta_Update.rmskin). See [Droptop Discord](https://discord.gg/droptop-four-800124057923485728) channel [#Preview-Updates](https://discord.com/channels/800124057923485728/801786468426973185) for change notes." --title "Droptop Update (Beta)"
+
+git config --global http.sslVerify false
+cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
+git checkout main
+git add .
+git commit -m %2
+git push
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
