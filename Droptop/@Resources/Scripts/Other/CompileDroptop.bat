@@ -15,6 +15,12 @@ git pull
 @echo Reseting configurations to default
 TIMEOUT 5
 
+del /f %4Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\zh-CN.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
+
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
