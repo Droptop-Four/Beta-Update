@@ -4,7 +4,7 @@
 NumberOfItems=3
 NumberOfDividers=1
 
-FolderLoc=C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Games\Local multiplayer
+FolderLoc=C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Control\Advanced controls
 ParentConfig=Droptop\Other\Folders\Folder01
 
 [PrepareLyricsSearch]
