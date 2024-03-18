@@ -467,7 +467,7 @@ xcopy /y /c /h /e "%SKINSPATH%Droptop Community Apps\Apps\*" "%USERPROFILE%\Docu
 del /f /q "%SKINSPATH%Droptop\@Resources\Images\Media\Cover.png"
 del /f /q "%SKINSPATH%Droptop\@Resources\Images\Media\CoverBlur.png"
 call "%SKINSPATH%Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" "%SKINSPATH%
-reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v %4 /t "REG_SZ" /d "" /f
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files\Rainmeter\Rainmeter.exe" /t "REG_SZ" /d "" /f
 cd "%SKINSPATH%Droptop\@Resources\Scripts\ImageMagick" & convert "%SKINSPATH%Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" "Wallpaper1.png" & convert "%SKINSPATH%Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" -crop 9999x100+0+0 "WallpaperCropped.png" & convert "WallpaperCropped.png" -blur 0x3 "Wallpaper1.0.png" & convert "WallpaperCropped.png" -blur 0x8 "Wallpaper1.1.png" & del /f /q "WallpaperCropped.png" & xcopy /E /I /Y "Wallpaper*.png" "%SKINSPATH%Droptop\Other\WindowMenu\WallpaperCache" & xcopy /E /I /Y "Wallpaper*.png" "%SKINSPATH%Droptop Folders\Other files\Themes" & del /f /q "*.png" & taskkill /f /im "convert.exe" & taskkill /f /im "mogrify.exe"
 cd "%SKINSPATH%Droptop\@Resources\Scripts\Other"
 REM xcopy /s /e /y /f /i "%SKINSPATH%Droptop" "%SKINSPATH%Redistributables\Droptop-Master"
