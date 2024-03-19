@@ -10,6 +10,7 @@ Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.
 Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\" -Recurse -Exclude $exclude
 
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\.git" -Recurse -Force
+Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\CustomApp.ini" -Recurse -Force
 Copy-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\32bit\*" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\32bit\" -Recurse
 Copy-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\64bit\*" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\64bit\" -Recurse
 Copy-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Images\RMSKIN.bmp" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\" -Recurse

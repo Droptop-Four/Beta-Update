@@ -467,7 +467,7 @@ xcopy /y /c /h /e "%SKINSPATH%Droptop Community Apps\Apps\*" "%USERPROFILE%\Docu
 del /f /q "%SKINSPATH%Droptop\@Resources\Images\Media\Cover.png"
 del /f /q "%SKINSPATH%Droptop\@Resources\Images\Media\CoverBlur.png"
 call "%SKINSPATH%Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" "%SKINSPATH%
-reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files\Rainmeter\Rainmeter.exe" /t "REG_SZ" /d "" /f
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files\Rainmeter\Rainmeter.exe" /t "REG_SZ" /d "~ HIGHDPIAWARE" /f
 cd "%SKINSPATH%Droptop\@Resources\Scripts\ImageMagick" & convert "%SKINSPATH%Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" "Wallpaper1.png" & convert "%SKINSPATH%Droptop\Other\WindowMenu\WallpaperCache\Wallpaper0.png" -crop 9999x100+0+0 "WallpaperCropped.png" & convert "WallpaperCropped.png" -blur 0x3 "Wallpaper1.0.png" & convert "WallpaperCropped.png" -blur 0x8 "Wallpaper1.1.png" & del /f /q "WallpaperCropped.png" & xcopy /E /I /Y "Wallpaper*.png" "%SKINSPATH%Droptop\Other\WindowMenu\WallpaperCache" & xcopy /E /I /Y "Wallpaper*.png" "%SKINSPATH%Droptop Folders\Other files\Themes" & del /f /q "*.png" & taskkill /f /im "convert.exe" & taskkill /f /im "mogrify.exe"
 cd "%SKINSPATH%Droptop\@Resources\Scripts\Other"
 REM xcopy /s /e /y /f /i "%SKINSPATH%Droptop" "%SKINSPATH%Redistributables\Droptop-Master"
@@ -635,6 +635,12 @@ attrib -s /d /s "%SKINSPATH%Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables FirstLoad 1 "%SKINSPATH%Droptop\@Resources\GlobalVar\UserSettings.inc"
 
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
+
+del /f /q "%SKINSPATH%Droptop Community Apps\Apps\CustomApp.ini"
+del /f /q "C:\Users\%USERNAME%\GitHub\Droptop-Four\Droptop Community Apps\Apps\CustomApp.ini"
+del /f /q "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\Sample Apps\CustomApp.ini"
+del /f /q "C:\Users\%USERNAME%\Documents\GitHub\Droptop-Four\Droptop\@Resources\Scripts\AppBuilder\Sample Apps\CustomApp.ini"
+
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
 
 TIMEOUT 10
