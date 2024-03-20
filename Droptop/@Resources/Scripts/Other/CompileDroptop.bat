@@ -462,8 +462,7 @@ attrib -s /d /s "%SKINSPATH%Droptop\@Resources\OriginalFolders\Games\*"
 xcopy /y /c /h "%SKINSPATH%Droptop Community Apps\Apps\Sample_App-Cariboudjan" "%SKINSPATH%Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 xcopy /y /c /h "%SKINSPATH%Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" "%SKINSPATH%Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
-REM xcopy /y /c /e "%USERPROFILE%\Documents\GitHub\Community-Apps\*" "%SKINSPATH%Droptop Community Apps\Apps" 
-REM xcopy /y /c /h /e "%SKINSPATH%Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitHub\Community-Apps"
+xcopy /y /c /h /e "%SKINSPATH%Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitHub\Community-Apps"
 del /f /q "%SKINSPATH%Droptop\@Resources\Images\Media\Cover.png"
 del /f /q "%SKINSPATH%Droptop\@Resources\Images\Media\CoverBlur.png"
 call "%SKINSPATH%Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" "%SKINSPATH%
@@ -637,6 +636,7 @@ attrib -s /d /s "%SKINSPATH%Droptop\@Resources\OriginalFolders\Games\*"
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 
 del /f /q "%SKINSPATH%Droptop Community Apps\Apps\CustomApp.ini"
+del /f /q "C:\Users\%USERNAME%\Documents\GitHub\Community-Apps\CustomApp.ini"
 del /f /q "C:\Users\%USERNAME%\GitHub\Droptop-Four\Droptop Community Apps\Apps\CustomApp.ini"
 del /f /q "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\Sample Apps\CustomApp.ini"
 del /f /q "C:\Users\%USERNAME%\Documents\GitHub\Droptop-Four\Droptop\@Resources\Scripts\AppBuilder\Sample Apps\CustomApp.ini"
