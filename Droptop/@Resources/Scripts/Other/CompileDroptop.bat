@@ -1,5 +1,7 @@
 REM "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned" required to create RMSKIN files.
 
+set startTime=%time%
+
 git config --global http.sslVerify false
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
@@ -666,6 +668,9 @@ git add .
 git commit -m %2
 git push
 
+echo Start Time: %startTime%
+echo Finish Time: %time%
+
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
 PAUSE
@@ -681,6 +686,10 @@ git push
 gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
+
+echo Start Time: %startTime%
+echo Finish Time: %time%
+
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...
 PAUSE
