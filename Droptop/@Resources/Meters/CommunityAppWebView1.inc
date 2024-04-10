@@ -30,4 +30,4 @@ ImageName=#CURRENTPATH#Icons\#CURRENTSECTION#.png
 SolidColor=#DropdownFontColor1#,(#WebNum#<>[##CURRENTSECTION#]?0:35)
 LeftMouseDownAction=[!SetOption Plugin.WebView URL "[#WebViewURL[##CURRENTSECTION#]]"][!SetVariable WebNum [##CURRENTSECTION#]][!WriteKeyValue Variables WebNum [#WebNum] "#MyVariablesLoc#"][!UpdateMeasure Plugin.WebView][!UpdateMeter *][!Redraw]
 X=(#DropdownMenuWidth#-([#CURRENTSECTION#:W]*[##CURRENTSECTION#])-((#WebViewTopHeight#/2)-(#IconW#/2)))
-Hidden=(#NumberOfActionIcons#>=[##CURRENTSECTION#]?0:1)
+Hidden=(#NumberOfActionIcons#>=[##CURRENTSECTION#]?(#WebViewHideTop#=1?1:0):1)
