@@ -270,6 +270,9 @@
             <Folder name="PopupMenuModule">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\AppButtonSettings0.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\AppButtonSettings1.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\ArtistSongInfo.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\Folder0ItemSettings.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\FolderItemSettings.inc" />
             </Folder>
         </Folder>
         <Folder name="Rainmeter">

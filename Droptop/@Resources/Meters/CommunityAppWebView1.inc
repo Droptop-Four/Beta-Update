@@ -10,9 +10,8 @@ Plugin=WebView
 URL=#WebViewURL#
 X=(#DropdownMenuCutout#+(#DropdownStrokeWidth#/2))
 Y=#WebViewTopHeight#
-; W=(#DropdownMenuWidth#+#SysAppMenuWOffset#+2-(#DropdownMenuCutout#*2)-#DropdownStrokeWidth#)
 W=(#DropdownMenuWidth#+#SysAppMenuWOffset#+2-(#DropdownMenuCutout#*2)-#DropdownStrokeWidth#)
-H=(#WebViewHeight#-#WebViewTopHeight#)
+H=(#WebViewHeight#-#WebViewTopHeight#-#DropdownBGCorner#)
 DynamicVariables=1
 UpdateDivider=-1
 Disabled=1
@@ -23,13 +22,13 @@ SolidColor=#WebViewBackgroundColor#
 X=(#DropdownMenuCutout#+(#DropdownStrokeWidth#/2))
 Y=#WebViewTopHeight#
 W=(#DropdownMenuWidth#+#SysAppMenuWOffset#+2-(#DropdownMenuCutout#*2)-#DropdownStrokeWidth#)
-H=(#WebViewHeight#-#WebViewTopHeight#-1)
+H=(#WebViewHeight#-#WebViewTopHeight#-#DropdownBGCorner#-1)
 MouseOverAction=[!UpdateMeasure Plugin.WebView]
 
 [ActionIconStyle]
 ImageName=#CURRENTPATH#Icons\#CURRENTSECTION#.png
 ImageAlpha=(#WebNum#<>[##CURRENTSECTION#]?155:255)
 LeftMouseDownAction=[!SetOption Plugin.WebView URL "[#WebViewURL[##CURRENTSECTION#]]"][!SetVariable WebNum [##CURRENTSECTION#]][!WriteKeyValue Variables WebNum [#WebNum] "#MyVariablesLoc#"][!UpdateMeasure Plugin.WebView][!UpdateMeter *][!Redraw]
-X=(#DropdownMenuWidth#-([#CURRENTSECTION#:W]*[##CURRENTSECTION#])-((#WebViewTopHeight#/2)-(#IconW#/2)))
-; X=-[#CURRENTSECTION#:W]r
+X=(#DropdownMenuWidth#-([#CURRENTSECTION#:W]*[##CURRENTSECTION#])-((#WebViewTopHeight#/2)-(#IconW#/2))-(#DropdownBGCorner#/2))
 Hidden=(#NumberOfActionIcons#>=[##CURRENTSECTION#]?(#WebViewHideTop#=1?1:0):1)
+
