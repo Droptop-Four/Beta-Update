@@ -224,6 +224,10 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PowerMenu\dialogShutdown.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PowerMenu\dialogSleep.ini" />
         </Folder>
+        <Folder name="Rainmeter">
+            <File name="C:\Users\Carib\AppData\Roaming\Rainmeter\Rainmeter.ini" />
+            <File name="C:\Users\Carib\AppData\Roaming\Rainmeter\Rainmeter.log" />
+        </Folder>
         <Folder name="Meters">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\DropdownMeters.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\SystemTrayMeters.inc" />
@@ -274,10 +278,6 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\Folder0ItemSettings.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\FolderItemSettings.inc" />
             </Folder>
-        </Folder>
-        <Folder name="Rainmeter">
-            <File name="C:\Users\Carib\AppData\Roaming\Rainmeter\Rainmeter.ini" />
-            <File name="C:\Users\Carib\AppData\Roaming\Rainmeter\Rainmeter.log" />
         </Folder>
         <Folder name="Folders">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini" />
