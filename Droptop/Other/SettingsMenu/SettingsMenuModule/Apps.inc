@@ -19,6 +19,17 @@ CommunityApp20=[#*CustomAppID8*]
 CommunityApp21=[#*CustomAppID9*]
 CommunityApp22=[#*CustomAppID10*]
 
+CommunityAppNum13=1
+CommunityAppNum14=2
+CommunityAppNum15=3
+CommunityAppNum16=4
+CommunityAppNum17=5
+CommunityAppNum18=6
+CommunityAppNum19=7
+CommunityAppNum20=8
+CommunityAppNum21=9
+CommunityAppNum22=10
+
 [MeasureAppName1]
 Measure=String
 String=[#CustomAppID1]
