@@ -82,8 +82,8 @@ Y=[Developer2:Y]
 [RunCommand.Attrib]
 Measure=Plugin
 Plugin=RunCommand
-; Parameter=attrib -s -h /d /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games\*" && attrib -s /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\desktop.ini" && attrib +h /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\desktop.ini" && attrib +s /d "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games\*"
-Parameter=attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
+; Parameter=attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
+Parameter=attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
 State=Hide
 OutputType=ANSI
 OutputFile=
