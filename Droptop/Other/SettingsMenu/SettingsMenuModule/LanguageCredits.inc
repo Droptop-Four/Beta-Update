@@ -245,6 +245,7 @@ Meter=Image
 X=3
 Y=(#DropdownIconYoffset#-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#-1)
 UpdateDivider=-1
+Container=AnimationContainer
 
 [Size]
 Measure=Calc
@@ -269,6 +270,7 @@ X=(#DropdownMenuWidth#-(3*#DroptopSize#)-(#DropdownStrokeWidth#/2))
 Y=(#DropdownIconYoffset#-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#+1)
 DynamicVariables=1
 Group=ScrollBar | Items
+Container=AnimationContainer
 
 ;-------------------------------------------
 
@@ -286,6 +288,7 @@ MouseOverAction=[!SetOption #CURRENTSECTION# ImageName "#@#Icons\Fixed\Medium\op
 MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageName "#@#Icons\Fixed\Medium\dot.png"][!SetOption #CURRENTSECTION# ImageAlpha (#*DropdownItemOpacity*#/3)][!UpdateMeter #CURRENTSECTION#][!Redraw]
 DynamicVariables=1
 UpdateDivider=-1
+Container=AnimationContainer
 
 [DownArrow]
 Meter=Shape
@@ -303,6 +306,7 @@ MouseLeaveAction=[!SetOption #CURRENTSECTION# Look "Fill Color #*DropdownFontCol
 X=(#DropdownMenuWidth#-(25*#DroptopSize#))
 Y=r
 DynamicVariables=1
+Container=AnimationContainer
 
 [UpArrow]
 Meter=Shape
@@ -317,3 +321,4 @@ MouseLeaveAction=[!SetOption #CURRENTSECTION# Look "Fill Color #*DropdownFontCol
 X=(#DropdownMenuWidth#-(45*#DroptopSize#))
 Y=r
 DynamicVariables=1
+Container=AnimationContainer

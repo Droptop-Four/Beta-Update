@@ -120,11 +120,13 @@ ExitApp
 
 ClipToggle:
  Send, !{Esc}
+ Sleep, 100
  Send, #v
 ExitApp
 
 EmojiToggle:
  Send, !{Esc}
+ Sleep, 100
  Send, #;
 ExitApp
 
