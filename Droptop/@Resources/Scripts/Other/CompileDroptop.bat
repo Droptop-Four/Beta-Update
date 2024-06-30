@@ -693,8 +693,9 @@ echo Start Time: %startTime%
 echo Finish Time: %time%
 
 REM TESTING below attrib to fix missing attributes for shortcuts after compile - April 16
-attrib -s -h /d /s %5Droptop Folders\Games\*"
-attrib -s /s %5Droptop Folders\desktop.ini"
+REM attrib -s -h /d /s %5Droptop Folders\Games\*"
+REM attrib -s /s %5Droptop Folders\desktop.ini"
+REM attrib +s /s %5Droptop Folders\desktop.ini"
 attrib +h /s %5Droptop Folders\desktop.ini"
 attrib +s /d /s %5Droptop Folders\Games\*"
 
