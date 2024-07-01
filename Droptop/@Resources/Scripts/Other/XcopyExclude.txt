@@ -60,3 +60,4 @@ Chess-EternalTheGod
 Lichess-EternalTheGod
 Jisho-Filete
 Last_FM-KazukiGames82
+IdleScreen-TheyCallMePapa
