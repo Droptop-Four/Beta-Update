@@ -24,7 +24,7 @@ TIMEOUT 5
 del /f %5Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
-del /f %5Droptop\@Resources\GlobalVar\Languages\zh-CN.inc"
+del /f %5Droptop\@Resources\GlobalVar\Languages\el-GR.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
 
 attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
