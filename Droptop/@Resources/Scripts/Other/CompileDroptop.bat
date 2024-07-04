@@ -8,7 +8,7 @@ cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git fetch
 git pull
 
-cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
 git fetch
 git pull
 
@@ -624,10 +624,26 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.zip"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.rmskin"
 
+git config --global user.name "%USERNAME%"
+git config --global user.email "N/A"
+
+git config --global http.sslVerify false
+cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+git checkout %USERNAME%_Branch
+git add .
+git commit -m %2
+git push
+
+powershell.exe [console]::beep(800,800); [console]::beep(800,800)
+@echo Droptop successfully pushed to %USERNAME%_Branch. Press any key to push a beta release and create all rmskins...
+PAUSE
+
 powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
 xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
@@ -683,12 +699,12 @@ PAUSE
 PAUSE
 
 git config --global http.sslVerify false
-cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
-git checkout main
-git add .
-git commit -m %2
-git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
+cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+REM git checkout main
+REM git add .
+REM git commit -m %2
+REM git push
+gh release create v%2 "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
 
