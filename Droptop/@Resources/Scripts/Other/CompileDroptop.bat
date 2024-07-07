@@ -8,7 +8,7 @@ cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git fetch
 git pull
 
-cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git fetch
 git pull
 
@@ -24,7 +24,7 @@ TIMEOUT 5
 del /f %5Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
-del /f %5Droptop\@Resources\GlobalVar\Languages\el-GR.inc"
+del /f %5Droptop\@Resources\GlobalVar\Languages\zh-CN.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
 
 attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
@@ -111,7 +111,6 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables UnitsMetric 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherSymbol 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherTemp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables ShowWeatherTempBar 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideIcons 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderMouseOverTimeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideSubIcons 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -317,11 +316,11 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables HideAppNewDesktop 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppTime 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppMail 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppAlarm 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppAlarm 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppVolume 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppWeather 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppWifi 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppBattery 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppBattery 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppDownloads 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppRecent 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppCopy 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -383,9 +382,9 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables BarXposOffsetNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DebugModeOFF 1 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables TopBarWidth "#SCREENAREAWIDTH#" %5Droptop\@Resources\GlobalVar\Control.inc"
-%4 !WriteKeyValue Variables LocationLatitude "" %5Droptop\@Resources\GlobalVar\UserVariables.inc"
-%4 !WriteKeyValue Variables LocationLongitude "" %5Droptop\@Resources\GlobalVar\UserVariables.inc"
-%4 !WriteKeyValue Variables MyLocation "" %5Droptop\@Resources\GlobalVar\UserVariables.inc"
+%4 !WriteKeyValue Variables LocationLatitude "" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables LocationLongitude "" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MyLocation "" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables PreviousClipboard "" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables NumberOfItems 1 %5Droptop\Other\Apps\Downloads\Downloads.ini"
 %4 !WriteKeyValue Variables NumberOfItems 1 %5Droptop\Other\Apps\Recent\Recent.ini"
@@ -418,30 +417,30 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables CategoryNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 %4 !WriteKeyValue Variables SubCatNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 %4 !WriteKeyValue Variables VarNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
-%4 !WriteKeyValue Variables BatteryHourLevel00 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel01 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel02 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel03 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel04 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel05 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel06 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel07 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel08 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel09 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel10 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel11 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel12 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel13 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel14 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel15 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel16 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel17 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel18 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel19 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel20 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel21 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel22 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryHourLevel23 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel00 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel01 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel02 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel03 100 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel04 100 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel05 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel06 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel07 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel08 20 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel09 20 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel10 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel11 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel12 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel13 100 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel14 100 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel15 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel16 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel17 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel18 20 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel19 20 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel20 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel21 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel22 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryHourLevel23 100 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting00 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting01 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting02 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -624,26 +623,10 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.zip"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.rmskin"
 
-git config --global user.name "%USERNAME%"
-git config --global user.email "N/A"
-
-git config --global http.sslVerify false
-cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-git checkout %USERNAME%_Branch
-git add .
-git commit -m %2
-git push
-
-powershell.exe [console]::beep(800,800); [console]::beep(800,800)
-@echo Droptop successfully pushed to %USERNAME%_Branch. Press any key to push a beta release and create all rmskins...
-PAUSE
-
 powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
 xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
@@ -686,9 +669,6 @@ git add .
 git commit -m %2
 git push
 
-attrib +h /s %5Droptop Folders\desktop.ini"
-attrib +s /d /s %5Droptop Folders\Games\*"
-
 echo Start Time: %startTime%
 echo Finish Time: %time%
 
@@ -699,12 +679,12 @@ PAUSE
 PAUSE
 
 git config --global http.sslVerify false
-cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-REM git checkout main
-REM git add .
-REM git commit -m %2
-REM git push
-gh release create v%2 "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
+cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+git checkout main
+git add .
+git commit -m %2
+git push
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
 
@@ -714,7 +694,8 @@ echo Finish Time: %time%
 REM TESTING below attrib to fix missing attributes for shortcuts after compile - April 16
 REM attrib -s -h /d /s %5Droptop Folders\Games\*"
 REM attrib -s /s %5Droptop Folders\desktop.ini"
-REM attrib +s /s %5Droptop Folders\desktop.ini"
+REM attrib +h /s %5Droptop Folders\desktop.ini"
+REM attrib +s /d /s %5Droptop Folders\Games\*"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...
