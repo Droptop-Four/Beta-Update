@@ -89,7 +89,7 @@ Plugin=RunCommand
 ; Parameter=attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
 ; Parameter=attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
 ; Parameter=attrib -s -h /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
-Parameter=attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"
+Parameter=attrib -h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib -s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini"
 State=Hide
 OutputType=ANSI
 OutputFile=
@@ -99,7 +99,8 @@ DynamicVariables=1
 Meter=String
 MeterStyle=InfoStyle | DevToolsStyle#ShowDevTools#
 Text=Correct install errors
-LeftMouseDownAction=#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure PSRM.ReplaceInFile "Run"][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
+; LeftMouseDownAction=#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure PSRM.ReplaceInFile "Run"][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
+LeftMouseDownAction=#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure PSRM.ReplaceInFile "Run"][attrib -h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib -s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
 Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)+(#DropdownItemHeight#*2))
 
 [Developer3Icon]
