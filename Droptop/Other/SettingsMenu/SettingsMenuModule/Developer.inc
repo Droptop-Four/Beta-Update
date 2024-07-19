@@ -37,7 +37,7 @@ UpdateDivider=-1
 [RunCommand.Attrib]
 Measure=Plugin
 Plugin=RunCommand
-Parameter=attrib -h /s /d "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib -s /s /d "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini"
+Parameter=attrib -h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib -s /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini"
 State=Hide
 OutputType=ANSI
 OutputFile=

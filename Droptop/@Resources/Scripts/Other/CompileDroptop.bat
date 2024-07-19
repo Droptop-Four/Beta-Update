@@ -377,7 +377,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables CustomApp9UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp10UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DeviceIsNotTouch 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryBacklightIconOFF 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ShowBacklightBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AltHome 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables LeftHotCornerActionNum 3 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables RightHotCornerActionNum 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -680,6 +680,11 @@ git add .
 git commit -m %2
 git push
 
+attrib -h /s %5Droptop Folders\desktop.ini"
+attrib +s /d /s %5Droptop Folders\Games\*"
+attrib -s /s %5Droptop Folders\desktop.ini"
+attrib +h /s %5Droptop Folders\desktop.ini"
+
 echo Start Time: %startTime%
 echo Finish Time: %time%
 
@@ -701,11 +706,6 @@ git config --global http.sslVerify true
 
 echo Start Time: %startTime%
 echo Finish Time: %time%
-
-attrib -h /s %5Droptop Folders\desktop.ini"
-attrib +s /d /s %5Droptop Folders\Games\*"
-attrib -s /s %5Droptop Folders\desktop.ini"
-attrib +h /s %5Droptop Folders\desktop.ini"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...
