@@ -685,6 +685,8 @@ attrib +s /d /s %5Droptop Folders\Games\*"
 attrib -s /s %5Droptop Folders\desktop.ini"
 attrib +h /s %5Droptop Folders\desktop.ini"
 
+"Wscript.exe" %5Droptop\@Resources\Scripts\IconsColor1.vbs" %5"
+
 echo Start Time: %startTime%
 echo Finish Time: %time%
 
