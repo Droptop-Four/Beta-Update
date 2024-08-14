@@ -1,12 +1,12 @@
 [Rainmeter]
 
 [Variables]
-NumberOfItems=3
+NumberOfItems=4
 NumberOfDividers=1
 
-3Icon=1
-4Icon=2
-5Icon=3
+4Icon=1
+5Icon=2
+6Icon=3
 
 [MeasureAppName]
 Measure=String
@@ -15,9 +15,20 @@ RegExpSubstitute=1
 Substitute="_":" ","-.*$":""
 DynamicVariables=1
 
+[MeasureHideAppStatus]
+Measure=Calc
+IfCondition=[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1
+IfTrueAction=[!DisableMouseAction 2 "*"][!DisableMouseAction 3 "*"][!SetOption 2 FontColor "#*DropdownFontColor1*#,(#*DropdownItemOpacity*#/2)"][!SetOption 3 FontColor "#*DropdownFontColor1*#,(#*DropdownItemOpacity*#/2)"]
+IfFalseAction=[!EnableMouseAction 2 "*"][!EnableMouseAction 3 "*"][!SetOption 2 FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption 3 FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"]
+; IfCondition2=[#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1
+; IfTrueAction2=[!DisableMouseAction 2 "*"][!SetOption 2 FontColor "#*DropdownFontColor1*#,(#*DropdownItemOpacity*#/2)"]
+DynamicVariables=1
+
 [1]
 Text=#PopupMenuContext3.1#
-LeftMouseDownAction=[!SetVariable CurrentAppNum [#SideAppPos[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]][#AppUpdateOnClose[#SideAppNum[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]][!WriteKeyValue Variables HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] ([#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1?0:1) "#@#GlobalVar\FolderSettings.inc"][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] ([#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1?0:1)][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar"][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\Other\BackgroundProcesses"][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar\Other\ContextBox"]    [!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] 1][!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] [#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] "Droptop\DropdownBar\Other\ContextBox"][!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] [#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] "Droptop\DropdownBar"][!WriteKeyValue Variables HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] [#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] "#@#GlobalVar\FolderSettings.inc"]    [!SetOption #CURRENTSECTION# ImageTint #*DropdownFontColor2*#,([#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=0?([#*DropdownItemOpacity*]/3):#*DropdownItemOpacity*#)][!ToggleMeterGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\DropdownBar"][!ToggleMeterGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]SysExtraButtons[#HideExtraButtons[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar"][!ToggleMeasureGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\DropdownBar"][!ToggleMeasureGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\Other\BackgroundProcesses"][!UpdateMeterGroup SysTray "Droptop\DropdownBar"][!UpdateMeterGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\DropdownBar"][!UpdateMeter BlankSpaceMarkerEND "Droptop\DropdownBar"][!UpdateMeterGroup NotificationBar "Droptop\DropdownBar"][!UpdateMeter TimeCenter "Droptop\DropdownBar"][!UpdateMeter TopBar "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!UpdateMeter * "Droptop\DropdownBar\Other\ContextBox"][!Redraw "Droptop\DropdownBar\Other\ContextBox"][!UpdateMeter *][!Redraw]
+LeftMouseDownAction=[!SetVariable CurrentAppNum [#SideAppPos[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]][#AppUpdateOnClose[#SideAppNum[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]][!WriteKeyValue Variables HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] ([#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1?0:1) "#@#GlobalVar\FolderSettings.inc"][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] ([#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1?0:1)][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar"][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\Other\BackgroundProcesses"][!SetVariable HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar\Other\ContextBox"]    [!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] 1][!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] [#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] "Droptop\DropdownBar\Other\ContextBox"][!SetVariable HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] [#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] "Droptop\DropdownBar"][!WriteKeyValue Variables HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]] [#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] "#@#GlobalVar\FolderSettings.inc"]    [!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0][!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0 "Droptop\DropdownBar"][!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0 "Droptop\Other\BackgroundProcesses"][!WriteKeyValue Variables IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0 "#@#GlobalVar\FolderSettings.inc"]     [!SetOption #CURRENTSECTION# ImageTint #*DropdownFontColor2*#,([#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=0?([#*DropdownItemOpacity*]/3):#*DropdownItemOpacity*#)][!ToggleMeterGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\DropdownBar"][!ToggleMeterGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]SysExtraButtons[#HideExtraButtons[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar"][!ToggleMeasureGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\DropdownBar"][!ToggleMeasureGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\Other\BackgroundProcesses"][!UpdateMeterGroup SysTray "Droptop\DropdownBar"][!UpdateMeterGroup [#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]Sys "Droptop\DropdownBar"][!UpdateMeter BlankSpaceMarkerEND "Droptop\DropdownBar"][!UpdateMeterGroup NotificationBar "Droptop\DropdownBar"][!UpdateMeter TimeCenter "Droptop\DropdownBar"][!UpdateMeter TopBar "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!UpdateMeter * "Droptop\DropdownBar\Other\ContextBox"][!Redraw "Droptop\DropdownBar\Other\ContextBox"][!UpdateMeasure MeasureHideAppStatus][!UpdateMeter *][!Redraw]
+
+; [!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0][!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0 "Droptop\DropdownBar"][!WriteKeyValue Variables IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] 0 "#@#GlobalVar\FolderSettings.inc"]
 
 [1Icon]
 ImageName=#@#Icons\Fixed\#IconSize#\toggle.png
@@ -33,16 +44,26 @@ ImageName=#@#Icons\Fixed\#IconSize#\toggle.png
 ImageAlpha=((#DropdownItemOpacity#/3)+((255-(#DropdownItemOpacity#/3))*(([#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]-1)*-1)))
 ImageFlip=[#IconFlip1[#HideTopBarDivider[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]
 
+[3]
+Text=#PopupMenuContext3.3#
+LeftMouseDownAction=[!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] ([#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]=1?0:1)][!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar\Other\ContextBox"][!SetVariable IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "Droptop\DropdownBar"][!WriteKeyValue Variables IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]] [#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] "#@#GlobalVar\FolderSettings.inc"][!UpdateMeterGroup SysTray "Droptop\DropdownBar"][!UpdateMeter BlankSpaceMarkerEND "Droptop\DropdownBar"][!UpdateMeterGroup NotificationBar "Droptop\DropdownBar"][!UpdateMeter TimeCenter "Droptop\DropdownBar"][!UpdateMeter TopBar "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!UpdateMeter * "Droptop\DropdownBar\Other\ContextBox"][!Redraw "Droptop\DropdownBar\Other\ContextBox"][!UpdateMeter *][!Redraw]
+
+[3Icon]
+ImageName=#@#Icons\Fixed\#IconSize#\toggle.png
+ImageAlpha=((#DropdownItemOpacity#/3)+((255-(#DropdownItemOpacity#/3))*[#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]))
+ImageFlip=[#IconFlip0[#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]]
+
+
 ;---
 
 [Divider1]
 Meter=Shape
 Shape=#DividerShape#
-Y=((#DropdownItemHeight#*2)+(#DividerSpace#*2))r
+Y=((#DropdownItemHeight#*3)+(#DividerSpace#*2))r
 
 ;---
 
-[3]
+[4]
 Hidden=1
 LeftMouseDownAction=
 MouseOverAction=
@@ -63,19 +84,19 @@ MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageAlpha "(#*DropdownItemOpacity
 Padding=
 Hidden=0
 
-[3Icon]
+[4Icon]
 MeterStyle=IconStyle | VariantIconStyle
 ImageName=#@#TopImages\[#SideAppName[#PopupModuleIndex]]\Medium\1\[#SideAppName[#PopupModuleIndex]].png
 X=#DropdownIconXoffset#
-Y=(#DropdownIconYoffset#+((#DropdownItemHeight#*2)+#DividerHeight#+(#DividerSpace#*2))+#DropdownItemYOffset#)
+Y=(#DropdownIconYoffset#+((#DropdownItemHeight#*3)+#DividerHeight#+(#DividerSpace#*2))+#DropdownItemYOffset#)
 Group=VariantIcon
 
-[4Icon]
+[5Icon]
 MeterStyle=IconStyle | VariantIconStyle
 ImageName=#@#TopImages\[#SideAppName[#PopupModuleIndex]]\Medium\2\[#SideAppName[#PopupModuleIndex]].png
 Group=VariantIcon
 
-[5Icon]
+[6Icon]
 MeterStyle=IconStyle | VariantIconStyle
 ImageName=#@#TopImages\[#SideAppName[#PopupModuleIndex]]\Medium\3\[#SideAppName[#PopupModuleIndex]].png
 Group=VariantIcon
