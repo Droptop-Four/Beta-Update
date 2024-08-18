@@ -12,6 +12,17 @@ Measure=Time
 Format=%y.%m%d
 DynamicVariables=1
 
+[CheckConnection]
+Measure=Plugin
+Plugin=SysInfo
+SysInfoType=INTERNET_CONNECTIVITY
+SysInfoData=1
+UpdateDivider=1
+IfEqualValue=-1
+IfEqualAction=[!SetOption 8 PostFix "*"][!SetOption 8 LeftMouseDownAction """#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]"""][!UpdateMeter 8][!Redraw]
+IfAboveValue=-1
+IfAboveAction=[!DisableMeasure #CURRENTSECTION#]
+
 [CheckUsernames]
 Measure=String
 String=%USERNAME%
