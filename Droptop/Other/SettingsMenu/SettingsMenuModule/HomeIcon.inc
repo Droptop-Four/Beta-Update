@@ -10,6 +10,13 @@ HomeColorTint1=255,255,255
 HomeColorTintB0=[#*DropdownFontColor2*]
 HomeColorTintB1=255,255,255
 
+CategoryLogos.IconIndex=8
+CategoryCreatures.IconIndex=1
+CategoryFood.IconIndex=20
+CategorySeasonal.IconIndex=11
+CategoryObjects.IconIndex=6
+CategorySymbols.IconIndex=7
+
 ; HomeColorB0=
 ; HomeColorB1=Color
 
@@ -158,6 +165,28 @@ Y=(#DividerSpace#*2)R
 
 [5Icon]
 Y=(#DividerSpace#*2)R
+ImageCrop=-32,-32,64,64,5
+ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Logos\Mono\#CategoryLogos.IconIndex#
+
+[6Icon]
+ImageCrop=-32,-32,64,64,5
+ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Creatures\Mono\#CategoryCreatures.IconIndex#
+
+[7Icon]
+ImageCrop=-32,-32,64,64,5
+ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Food\Mono\#CategoryFood.IconIndex#
+
+[8Icon]
+ImageCrop=-32,-32,64,64,5
+ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Seasonal\Mono\#CategorySeasonal.IconIndex#
+
+[9Icon]
+ImageCrop=-32,-32,64,64,5
+ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Objects\Mono\#CategoryObjects.IconIndex#
+
+[10Icon]
+ImageCrop=-32,-32,64,64,5
+ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Symbols\Mono\#CategorySymbols.IconIndex#
 
 [5Arrow]
 Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*4)+(#DividerSpace#*4))
