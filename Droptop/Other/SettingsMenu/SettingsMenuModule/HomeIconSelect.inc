@@ -20,6 +20,8 @@ DropdownFontColor2=#TopBarFontColor2#
 DropdownItemHL=#TopBarHLColor1#
 DropdownItemHL2=#TopBarHLColor2#
 
+DropdownMenuOpacity1=#TopBarOpacity1#
+
 DropdownHLOpacity=#TopBarHLOpacity#
 HighlightShapeOpacityDivisor1B=#HighlightShapeOpacityDivisor1A#
 
