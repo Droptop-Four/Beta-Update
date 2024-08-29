@@ -40,7 +40,7 @@ DropdownHLOpacity=100
 BlurEnabled=0
 ; Measure=Plugin
 ; Plugin=FrostedGlass
-; BlurEnabled=(#ForceOpaque#=1?0:#DropdownMenuBlur#)
+; ; BlurEnabled=(#ForceOpaque#=1?0:#DropdownMenuBlur#)
 ; Type=[#Win10.BlurType[#BlurTypeNum][#Win10Apps]]
 ; Border=[#Shadows[#DropdownMenuShadow]]
 ; Corner=[#BlurCorner[#DropdownRoundCorners]]
