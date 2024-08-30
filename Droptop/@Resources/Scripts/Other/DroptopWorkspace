@@ -314,6 +314,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ReplaceInFile.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\TranslationEncoding.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\DownloadUpdates.ps1" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\GetLatLong.ps1" />
             </Folder>
             <Folder name="Other">
                 <File name="CompileDroptop.bat" />

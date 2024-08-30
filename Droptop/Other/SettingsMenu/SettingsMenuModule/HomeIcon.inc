@@ -15,7 +15,7 @@ CategoryCreatures.IconIndex=1
 CategoryFood.IconIndex=20
 CategorySeasonal.IconIndex=1
 CategoryObjects.IconIndex=6
-CategorySymbols.IconIndex=8
+CategorySymbols.IconIndex=6
 
 ; HomeColorB0=
 ; HomeColorB1=Color
