@@ -6,6 +6,9 @@ IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView]
 OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#]
 UpdateDivider=-1
 
+[Background]
+Container=
+
 [Plugin.WebView]
 Measure=Plugin
 Plugin=WebView
