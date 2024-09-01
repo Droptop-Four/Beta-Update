@@ -1,6 +1,6 @@
 [Rainmeter]
 SkinHeight=((#DropdownMenuCutout#*3)+((3*#DroptopSize#)*2)+((#DropdownItemHeight#*(((#HideAppCustomApp1#+#HideAppCustomApp2#+#HideAppCustomApp3#+#HideAppCustomApp4#+#HideAppCustomApp5#+#HideAppCustomApp6#+#HideAppCustomApp7#+#HideAppCustomApp8#+#HideAppCustomApp9#+#HideAppCustomApp10#)-10)*-1))+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2))+(#DropdownItemHeight#*#NumberOfItems#+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2))+((#DropdownItemHeight#*1)+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2))+(#DropdownStrokeWidth#*3))
-MouseLeaveAction=#ResetActiveFolders#[!CommandMeasure MeasureActionTimer "Stop 1"][!CommandMeasure MeasureActionTimer "Stop 2"][!SetVariable FolderMode 0]
+MouseLeaveAction=#ResetActiveFolders#[!SetVariable FolderMode 0]
 
 [Variables]
 @IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
