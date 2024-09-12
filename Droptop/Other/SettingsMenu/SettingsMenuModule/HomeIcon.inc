@@ -13,8 +13,8 @@ HomeColorTintB1=255,255,255
 CategoryLogos.IconIndex=1
 CategoryCreatures.IconIndex=1
 CategoryFood.IconIndex=12
-CategorySeasonal.IconIndex=10
-CategoryObjects.IconIndex=17
+CategorySeasonal.IconIndex=1
+CategoryObjects.IconIndex=3
 CategorySymbols.IconIndex=8
 
 ; HomeColorB0=
