@@ -109,14 +109,12 @@ MaskImagePath=
 MaskImageName=
 Padding=0,0,0,0
 ImageCrop=-52,-52,104,104,5
-; ImageName=#@#Icons\Fixed\#IconSize#\dice.png
-; ImageName=[#HomeImageName[#CustomHomeButton]]
 ImageName=[#HomeButtonLocation[#CustomHomeButton[#CustomHomeButton]][#HomeColorNum]]
 ImageAlpha=(#DropdownItemOpacity#/1.5)
 X=(#DropdownMenuWidth#-[#CURRENTSECTION#:W]-#DropdownIconXoffset#)
 Y=(#DropdownIconYOffset#+#DropdownItemYOffset#)
 H=#DropdownItemHeight#
-W=100
+W=#DropdownItemHeight#
 GreyScale=0
 PreserveAspectRatio=1
 LeftMouseDownAction=[!SetVariable CustomHomeButton (#CustomHomeButton#=1?0:1)][!SetVariable CustomHomeButton [#CustomHomeButton] "Droptop\DropdownBar"][!WriteKeyValue Variables CustomHomeButton [#CustomHomeButton] "#@#GlobalVar\UserSettings.inc"][!UpdateMeter *][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!Redraw]
@@ -223,9 +221,3 @@ Hidden=0
 [11Arrow]
 Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*10)+(#DividerSpace#*4))
 Hidden=0
-
-; [5]
-; Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*4)+(#DropdownItemHeight#*4)+(#DropdownItemHeight#/2)+(#DividerHeight#*2))
-
-; [5Icon]
-; Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*2)+(#DropdownItemHeight#*1)+#DividerHeight#+1)
