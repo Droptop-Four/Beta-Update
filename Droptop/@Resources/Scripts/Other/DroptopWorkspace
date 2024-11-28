@@ -49,6 +49,7 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\ThemeBuilderOptions.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Supporter.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\TopBarPos.inc" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\BluetoothVariables.inc" />
         </Folder>
         <Folder name="SettingsMenu">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini" />
@@ -274,6 +275,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\ArtistSongInfo.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\Folder0ItemSettings.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\FolderItemSettings.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenuModule\Bluetooth.inc" />
             </Folder>
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\NotificationPopup\NotificationPopup.ini" />
         </Folder>
@@ -307,6 +309,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\Func.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Bluetooth.lua" />
             </Folder>
             <Folder name="Powershell">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
