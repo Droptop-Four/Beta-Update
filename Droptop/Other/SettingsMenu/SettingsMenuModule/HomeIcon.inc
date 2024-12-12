@@ -13,7 +13,7 @@ HomeColorTintB1=255,255,255
 CategoryLogos.IconIndex=16
 CategoryCreatures.IconIndex=3
 CategoryFood.IconIndex=10
-CategorySeasonal.IconIndex=1
+CategorySeasonal.IconIndex=17
 CategoryObjects.IconIndex=15
 CategorySymbols.IconIndex=8
 
