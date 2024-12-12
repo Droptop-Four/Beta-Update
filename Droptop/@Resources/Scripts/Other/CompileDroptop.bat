@@ -37,7 +37,9 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 taskkill /f /im "Droptop.exe"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
-xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\Scripts"
+xcopy /y /c /h %5Droptop Folders\Other files\DroptopData.ini" %5Droptop\@Resources\OriginalFolders\Other files"
+xcopy /y /c /h %5Droptop Folders\Other files\Droptop.ahk" %5Droptop\@Resources\OriginalFolders\Other files"
+xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\OriginalFolders\Other files"
 %4 !DeactivateConfigGroup DroptopSuite
 %4 !DeactivateConfig Droptop\DropdownBar\AppBar
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
