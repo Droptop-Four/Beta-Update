@@ -1,6 +1,8 @@
 #Persistent
 #SingleInstance, force
 
+Menu, Tray, Tip, Droptop Task Helper
+
 FileRead, fileContent, DroptopData.ini
 Loop, Parse, fileContent, `n, `r
 {
