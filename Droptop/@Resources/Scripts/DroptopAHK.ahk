@@ -140,7 +140,13 @@ ExitApp
 LangSwitcher:
  Send, !{Esc}
  Send, {LAlt down}{LShift}{LAlt up}
+ Run, "%2%" !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
 ExitApp
+; LangSwitcher:
+ ; Send, !{Esc}
+ ; Sleep, 50
+ ; Send, !{Shift}
+; ExitApp
 
 LangToggle:
  Send, {LAlt down}{LShift}{LAlt up}

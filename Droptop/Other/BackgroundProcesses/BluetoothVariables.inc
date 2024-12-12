@@ -2,7 +2,7 @@
 
 DevicesNumber=7
 
-Devices=UE BOOM|56991670054|Bluetooth#Bluetootha0:29:42:3a:cd:b0-00:0d:44:f7:df:26|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;LinkBuds S|273014288303329|Bluetooth#Bluetootha0:29:42:3a:cd:b0-f8:4e:17:ac:44:e1|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;B06T3|171576252002104|Bluetooth#Bluetootha0:29:42:3a:cd:b0-9c:0c:35:8d:6f:38|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|1|1|0|HumanInterfaceDevice|DigitalPen|1|100|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Surface Arc Mouse|254394102616002|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:1e:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;MX Master 2S|223463262609936|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:10|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
+Devices=UE BOOM|56991670054|Bluetooth#Bluetootha0:29:42:3a:cd:b0-00:0d:44:f7:df:26|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;LinkBuds S|273014288303329|Bluetooth#Bluetootha0:29:42:3a:cd:b0-f8:4e:17:ac:44:e1|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;B06T3|171576252002104|Bluetooth#Bluetootha0:29:42:3a:cd:b0-9c:0c:35:8d:6f:38|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|1|1|0|HumanInterfaceDevice|DigitalPen|1|94|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Surface Arc Mouse|254394102616002|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:1e:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;MX Master 2S|223463262609936|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:10|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
 
 BTStatus=1
 
@@ -99,7 +99,7 @@ Device8HasBatteryLevel=0
 Device1Battery=0
 Device2Battery=0
 Device3Battery=0
-Device4Battery=100
+Device4Battery=94
 Device5Battery=0
 Device6Battery=0
 Device7Battery=0

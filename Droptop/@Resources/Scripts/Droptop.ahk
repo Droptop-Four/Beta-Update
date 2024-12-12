@@ -27,3 +27,11 @@ IfWinNotExist, ahk_exe Rainmeter.exe
     Run, %PROGRAMPATH%
 }
 return
+
+~!Shift::
+    Run, %PROGRAMPATH% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
+return
+
+~#Space::
+    Run, %PROGRAMPATH% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
+return

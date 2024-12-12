@@ -302,6 +302,7 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\CreateShortcut.vbs" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Droptop.ahk" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestoreFolders.bat" />
             <Folder name="Lua">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\CScript.lua" />
