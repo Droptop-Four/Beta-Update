@@ -84,3 +84,6 @@ Microsoft_Copilot-Cariboudjan
 Simple_Search-Cariboudjan
 Game_Library-Cariboudjan
 X-Cariboudjan
+Power_State-Cariboudjan
+Metronom-Cariboudjan
+ChatGPT-Cariboudjan
