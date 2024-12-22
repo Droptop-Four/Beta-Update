@@ -515,6 +515,7 @@ xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_App-Cariboudjan" %5Dropto
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_WebView-Cariboudjan"
 attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitHub\Community-Apps"
+del /f /q %5Droptop\@Resources\Images\Bluetooth\*.jpg"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
 del /f /q %5Droptop\@Resources\Images\Media\CoverBlur.png"
 call %5Droptop\@Resources\Scripts\RestoreFolders.bat" %5
