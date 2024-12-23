@@ -438,7 +438,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables DisableDPINum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DPIRescaleValue 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables PopupInFullscreen 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables SSIDName "..." %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables SSIDName "Offline" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideSSID 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle1 "#FolderName1#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle2 "#FolderName2#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
