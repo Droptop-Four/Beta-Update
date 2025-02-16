@@ -38,3 +38,9 @@ return
 ~#Space::
     Run, %PROGRAMPATH% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
 return
+
+~!+d::
+    Run, %PROGRAMPATH% !Zpos 1 "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !ToggleFade "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !HideMeter Meter1 "Droptop\Other\BackgroundProcesses"
+return
