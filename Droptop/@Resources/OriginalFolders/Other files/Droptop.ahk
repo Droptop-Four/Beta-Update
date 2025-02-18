@@ -6,6 +6,9 @@ Menu, Tray, Tip, Droptop Task Helper
 
 PROGRAMPATH := "C:\Program Files\Rainmeter\Rainmeter.exe"
 
+HotkeyModeZ := 0
+ShowState := 0
+
 FileRead, fileContent, DroptopData.ini
 Loop, Parse, fileContent, `n, `r
 {
@@ -13,6 +16,17 @@ Loop, Parse, fileContent, `n, `r
     if (keyValue1 = "PROGRAMPATH")
     {
         PROGRAMPATH := keyValue2
+        break
+    }
+}
+
+FileRead, fileContent, DroptopData.ini
+Loop, Parse, fileContent, `n, `r
+{
+    StringSplit, keyValue, A_LoopField, =
+    if (keyValue1 = "HotkeyModeZ")
+    {
+        HotkeyModeZ := keyValue2
         break
     }
 }
@@ -28,6 +42,11 @@ CheckProgram:
 IfWinNotExist, ahk_exe Rainmeter.exe
 {
     Run, %PROGRAMPATH%
+	ShowState := 0
+}
+else
+{
+	ShowState := 0
 }
 return
 
@@ -40,7 +59,18 @@ return
 return
 
 ~!+d::
+if ShowState = 0
+{
+	ShowState := 1
+    Run, %PROGRAMPATH% !Hide "Droptop\DropdownBar"
     Run, %PROGRAMPATH% !Zpos 1 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !ToggleFade "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !ShowFade "Droptop\DropdownBar"
     Run, %PROGRAMPATH% !HideMeter Meter1 "Droptop\Other\BackgroundProcesses"
+}
+else
+{
+	ShowState := 0
+    Run, %PROGRAMPATH% !Zpos %HotkeyModeZ% "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !ShowMeter Meter1 "Droptop\Other\BackgroundProcesses"
+}
 return
