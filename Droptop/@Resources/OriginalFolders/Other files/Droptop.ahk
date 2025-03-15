@@ -74,3 +74,33 @@ else
     Run, %PROGRAMPATH% !ShowMeter Meter1 "Droptop\Other\BackgroundProcesses"
 }
 return
+
+~!+1::
+    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 1 "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+return
+
+~!+2::
+    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 2 "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+return
+
+~!+3::
+    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 3 "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+return
+
+~!4::
+    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 4 "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+return
+
+~!+5::
+    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 5 "Droptop\DropdownBar"
+    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+return
