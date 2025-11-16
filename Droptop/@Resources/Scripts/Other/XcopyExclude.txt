@@ -18,7 +18,6 @@ Speedtest-Bunz
 Feeder-Cariboudjan
 GSuite-Cariboudjan
 Translator-Bunz
-SearchBar-Mike_Boynton
 WakaTime-Bunz
 ToolTipster-TheyCallMePapa
 Quick_Search-KazukiGames82
@@ -82,9 +81,17 @@ GlazeWM_Workspaces-asrma7
 Power_Controls-Cariboudjan
 Microsoft_Copilot-Cariboudjan
 Simple_Search-Cariboudjan
-Game_Library-Cariboudjan
 X-Cariboudjan
 Power_State-Cariboudjan
 Metronom-Cariboudjan
 ChatGPT-Cariboudjan
 Spotify_Web_Player-Cariboudjan
+Searchbar-TheyCallMePapa
+CoreTemps-TheyCallMePapa
+Any_Skin-Cariboudjan
+Gumroad-Cariboudjan
+Recycle_Bin-Phan
+Google_Home-Cariboudjan
+IO-KazukiGames82
+Seeking_Alpha-Cariboudjan
+ChatHub-Obsidience
