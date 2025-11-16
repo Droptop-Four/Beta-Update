@@ -317,6 +317,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Bluetooth.lua" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandlerWindow.lua" />
             </Folder>
             <Folder name="Powershell">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
