@@ -2,7 +2,7 @@
 
 DevicesNumber=2
 
-Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetoothc8:5e:a9:64:1d:1e-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;MX Master 2S|223463262609938|BluetoothLE#BluetoothLEc8:5e:a9:64:1d:1e-cb:3d:18:63:62:12|1|1|0|HumanInterfaceDevice|Mouse|1|90|1;
+Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetoothc8:5e:a9:64:1d:1e-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;MX Master 2S|223463262609938|BluetoothLE#BluetoothLEc8:5e:a9:64:1d:1e-cb:3d:18:63:62:12|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
 
 BTStatus=1
 
@@ -43,7 +43,7 @@ Device7Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 Device8Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 
 Device1Connected=0
-Device2Connected=1
+Device2Connected=0
 Device3Connected=0
 Device4Connected=0
 Device5Connected=0
@@ -88,7 +88,7 @@ Device7MinorCategory=Unknown
 Device8MinorCategory=Unknown
 
 Device1HasBatteryLevel=0
-Device2HasBatteryLevel=1
+Device2HasBatteryLevel=0
 Device3HasBatteryLevel=0
 Device4HasBatteryLevel=0
 Device5HasBatteryLevel=0
@@ -97,7 +97,7 @@ Device7HasBatteryLevel=0
 Device8HasBatteryLevel=0
 
 Device1Battery=0
-Device2Battery=90
+Device2Battery=0
 Device3Battery=0
 Device4Battery=0
 Device5Battery=0
