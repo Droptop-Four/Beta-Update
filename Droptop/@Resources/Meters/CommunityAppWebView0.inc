@@ -4,4 +4,5 @@ Formula=Counter
 IfCondition=(AutoStartup=1)
 IfTrueAction=
 OnUpdateAction=[!Zpos 1]
+DynamicVariables=1
 UpdateDivider=-1

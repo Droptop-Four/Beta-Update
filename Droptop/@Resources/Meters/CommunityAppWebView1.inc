@@ -6,7 +6,8 @@ Measure=Calc
 Formula=Counter
 IfCondition=(AutoStartup=1)
 IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView]
-OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#]
+OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#][!SetVariable DropdownMenuWidth.CustomApp#CustomAppPosition# #WebViewWidth# "Droptop\DropdownBar"][!WriteKeyValue Variables DropdownMenuWidth.CustomApp#CustomAppPosition# #WebViewWidth# "#SKINSPATH#Droptop\DropdownBar\DropdownBar.ini"]
+DynamicVariables=1
 UpdateDivider=-1
 
 [BlurBehind]
