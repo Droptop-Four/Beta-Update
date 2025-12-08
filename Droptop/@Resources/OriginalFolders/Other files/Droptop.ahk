@@ -10,13 +10,39 @@ Menu, Tray, Tip, Droptop Task Helper
 
 ShowState := 0
 
-AntiCheatProcess := "EAAntiCheat.GameServiceLauncher.exe|EasyAntiCheat.exe|EasyAntiCheat_EOS.exe"
+AntiCheatProcess := "EAAntiCheat.GameServiceLauncher.exe|EasyAntiCheat.exe|EasyAntiCheat_EOS.exe|PioneerGame.exe"
 FoundAntiCheatProcess = 
 FullPath := ""
 
 ; Run, %1%
 ; Sleep, 5000
 ; Run, %1% !ActivateConfig Droptop\DropdownBar
+
+_hwnd := ""
+settimer, currentwindow
+
+currentwindow:
+	hwnd := winexist("a")
+	if !(hwnd = _hwnd) {
+		_hwnd := hwnd
+		gosub foolproof
+	}
+return
+
+foolproof:
+Loop, parse, AntiCheatProcess, |
+{
+    CurrentProcess := A_LoopField
+    
+    ; The Process command sets ErrorLevel to the PID (non-zero) if found, or 0 if not.
+    Process, Exist, %CurrentProcess%
+    
+    if ErrorLevel  ; ErrorLevel is non-zero (True) if the process was found
+    {
+        ExitApp
+    }
+}
+return
 
 SetTimer, CheckProgram, 5000 ; Check every 5 seconds
 return
@@ -41,18 +67,18 @@ else
 }
   ; Variable to store the name of the first found process
 
-Loop, parse, AntiCheatProcess, |
-{
-    CurrentProcess := A_LoopField
+; Loop, parse, AntiCheatProcess, |
+; {
+    ; CurrentProcess := A_LoopField
     
-    ; The Process command sets ErrorLevel to the PID (non-zero) if found, or 0 if not.
-    Process, Exist, %CurrentProcess%
+    ; ; The Process command sets ErrorLevel to the PID (non-zero) if found, or 0 if not.
+    ; Process, Exist, %CurrentProcess%
     
-    if ErrorLevel  ; ErrorLevel is non-zero (True) if the process was found
-    {
-        ExitApp
-    }
-}
+    ; if ErrorLevel  ; ErrorLevel is non-zero (True) if the process was found
+    ; {
+        ; ExitApp
+    ; }
+; }
 
 
 
