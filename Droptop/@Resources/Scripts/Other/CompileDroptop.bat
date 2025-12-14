@@ -331,7 +331,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderHidden11 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden12 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables FolderListView2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderListView2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView4 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView5 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
