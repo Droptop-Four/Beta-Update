@@ -426,7 +426,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables DroptopSleepMode 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopSleepMinutes 5 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables AutomaticWeatherLoc 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWinButton 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideProgramsApp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideAppCommands 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
