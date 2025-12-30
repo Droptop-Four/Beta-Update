@@ -320,7 +320,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables SideAppPosCustomApp10 22 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables FolderHidden1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables FolderHidden3 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderHidden3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden4 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden5 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden6 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -331,7 +331,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderHidden11 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden12 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables FolderListView2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderListView2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView4 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView5 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -560,7 +560,6 @@ xcopy /e /y /f /i %5Droptop\@Resources\Scripts\AppBuilder\TemplateBackup\*" %5Dr
 xcopy /e /i /y %5Droptop Community Apps" %5Redistributables\Basic-Version\Skins\Droptop Community Apps" /EXCLUDE:XcopyExclude.txt
 robocopy %5Droptop" %5Redistributables\Basic-Version\Skins\Droptop" /E
 robocopy %5Droptop\@Resources\OriginalFolders" %5Redistributables\Basic-Version\Skins\Droptop Folders" /E
-REM "Wscript.exe" %5Droptop\@Resources\Scripts\IconsColor1.vbs" %5"
 RD /S /Q %5Redistributables\Basic-Version\Skins\Droptop\Other\Folders\Folder12"
 RD /S /Q %5Redistributables\Basic-Version\Skins\Droptop\Other\Folders\Folder11"
 RD /S /Q %5Redistributables\Basic-Version\Skins\Droptop\Other\Folders\Folder10"
@@ -696,8 +695,6 @@ attrib -h /s %5Droptop Folders\desktop.ini"
 attrib +s /d /s %5Droptop Folders\Games\*"
 attrib -s /s %5Droptop Folders\desktop.ini"
 attrib +h /s %5Droptop Folders\desktop.ini"
-
-"Wscript.exe" %5Droptop\@Resources\Scripts\IconsColor1.vbs" %5"
 
 %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 
