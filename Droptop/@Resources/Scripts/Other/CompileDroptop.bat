@@ -533,13 +533,6 @@ xcopy /y /c /h /e /i %5Droptop" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Dropt
 xcopy /y /c /h /e /i %5Droptop Folders" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop Folders"
 forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"
 
-del /f /q %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\MyGames\*"
-%4 !WriteKeyValue Variables Pinned1Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
-%4 !WriteKeyValue Variables Pinned2Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
-%4 !WriteKeyValue Variables Pinned3Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
-%4 !WriteKeyValue Variables Pinned4Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
-%4 !WriteKeyValue Variables Pinned5Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
-
 del /f /q %5Droptop\@Resources\Images\Bluetooth\*.jpg"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
 del /f /q %5Droptop\@Resources\Images\Media\CoverBlur.png"
