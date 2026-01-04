@@ -524,6 +524,8 @@ REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVa
 %4 !WriteKeyValue Variables BatteryReporting21 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting22 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting23 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables PowerShellPermissionsGranted 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables TimeOpensNotifications 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_App-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_App-Cariboudjan"
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_WebView-Cariboudjan"
 attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
