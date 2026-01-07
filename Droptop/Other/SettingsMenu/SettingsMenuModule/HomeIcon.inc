@@ -75,13 +75,13 @@ LeftMouseDownAction=[!WriteKeyValue Variables NotificationText "#NotificationSup
 
 [LockedStyle1]
 
-[LockedIconStyle0]
-ImageName=#@#Icons\Fixed\#IconSize#\lock.png
-MaskImageName=""
-MaskImagePath=""
-ImageFlip=None
+; [LockedIconStyle0]
+; ImageName=#@#Icons\Fixed\#IconSize#\lock.png
+; MaskImageName=""
+; MaskImagePath=""
+; ImageFlip=None
 
-[LockedIconStyle1]
+; [LockedIconStyle1]
 
 [1]
 MeterStyle=InfoStyle | ItemStyle | LockedStyle#Supporter#
@@ -93,7 +93,7 @@ Hidden=0
 Group=None
 
 [1Icon]
-MeterStyle=IconStyle | LockedIconStyle#Supporter#
+MeterStyle=IconStyle
 X=#DropdownIconXoffset#
 Y=[1:Y]
 
