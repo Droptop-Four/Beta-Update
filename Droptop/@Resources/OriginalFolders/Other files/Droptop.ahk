@@ -120,13 +120,12 @@ if ShowState = 0
     Run, %1% !Hide "Droptop\DropdownBar"
     Run, %1% !Zpos 1 "Droptop\DropdownBar"
     Run, %1% !ShowFade "Droptop\DropdownBar"
-    Run, %1% !HideMeter Meter1 "Droptop\Other\BackgroundProcesses"
 }
 else
 {
 	ShowState := 0
     Run, %1% !Zpos %2% "Droptop\DropdownBar"
-    Run, %1% !ShowMeter Meter1 "Droptop\Other\BackgroundProcesses"
+    Run, %1% !HideFade "Droptop\DropdownBar"
 }
 return
 
