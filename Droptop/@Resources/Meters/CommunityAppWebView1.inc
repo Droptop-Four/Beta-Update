@@ -15,7 +15,7 @@ Measure=Plugin
 Plugin=EasingWindow
 TargetY=(#TopHeight#+#DropdownMenuYOffset#-(#TopBarBlurCutout#*#AutohideTopBar#)+#TopBarY#)
 Ms=#DropdownAnimationSpeed#
-OnReverseAction=[![#HideFade[#ChargingStatus]]]
+OnReverseAction=[!DisableMouseAction * *][!HideMeterGroup Highlight][!Delay 150][!EnableMouseAction * *]
 ; SavePosition=1
 UpdateDivider=-1
 
