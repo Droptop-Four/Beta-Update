@@ -13,9 +13,10 @@ UpdateDivider=-1
 [EasingWindow]
 Measure=Plugin
 Plugin=EasingWindow
-TargetY=(#TopHeight#+#DropdownMenuYOffset#-(#TopBarBlurCutout#*#AutohideTopBar#)+#TopBarY#)
-Ms=#DropdownAnimationSpeed#
-OnReverseAction=[!DisableMouseAction * *][!HideMeterGroup Highlight][!Delay 150][!EnableMouseAction * *]
+EndY=(#TopHeight#/2)
+RelativePosition=1
+Duration=#DropdownAnimationSpeed#
+OnReverseBeginAction=[!DisableMouseAction * *][!HideMeterGroup Highlight][!Delay 150][!EnableMouseAction * *]
 ; SavePosition=1
 UpdateDivider=-1
 
@@ -68,7 +69,7 @@ ImageName=#CURRENTPATH#Icons\[#ActionItemIconFileName[##CURRENTSECTION#]].png
 LeftMouseDownAction=[#ActionItemAction[##CURRENTSECTION#]]
 
 [IconStyle]
-MouseOverAction=[!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable CurrentSubFolder #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Execute 2"]
+MouseOverAction=[!SetOption #CURRENTSECTION# ImageTint "#*DropdownFontColor2*#,(#*HighlightFontOpacity2*#*#*ContentFade*#)"][!SetOption #CURRENTSECTION# ImageAlpha "#*HighlightFontOpacity2*#"][!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable CurrentSubFolder #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Execute 2"]
 MouseLeaveAction=[!SetVariable ItemIsHighlighted 0][!SetOption #CURRENTSECTION# ImageTint ""][!SetOption #CURRENTSECTION# ImageAlpha ""][!SetOption #CURRENTSECTION# FontColor ""][!UpdateMeter #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Stop 2"][!Delay 10][!UpdateMeasure CalcItemIsHighlighted]
 Padding=((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2))
 X=R
