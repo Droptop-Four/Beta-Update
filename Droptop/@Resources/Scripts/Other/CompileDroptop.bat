@@ -499,6 +499,8 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables CategoryNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 %4 !WriteKeyValue Variables SubCatNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 %4 !WriteKeyValue Variables VarNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
+%4 !WriteKeyValue Variables TopBarAnimationNum "3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables DropdownAnimationNum "3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
 %4 !WriteKeyValue Variables BatteryHourLevel00 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryHourLevel01 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
