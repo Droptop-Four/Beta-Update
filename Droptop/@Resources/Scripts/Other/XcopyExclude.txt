@@ -99,3 +99,4 @@ ChatHub-Obsidience
 Instagram_Chat-Cariboudjan
 Home_Assistant-Cariboudjan
 PTLevel-Cariboudjan
+Google_Keep-Cariboudjan
