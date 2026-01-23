@@ -441,6 +441,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables CustomApp9UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp10UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
+%4 !WriteKeyValue Variables TabletModeON 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DeviceIsNotTouch 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ShowBacklightBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AltHome 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
