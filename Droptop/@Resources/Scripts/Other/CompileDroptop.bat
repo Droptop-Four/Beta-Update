@@ -41,7 +41,11 @@ xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.bat" %5Droptop\@R
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@Resources\OriginalFolders\Other files"
 REM %4 !DeactivateConfigGroup DroptopSuite
 REM %4 !DeactivateConfig Droptop\DropdownBar\AppBar
+
 taskkill /f /im "Rainmeter.exe"
+
+taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
+
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopIsUpdate 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables Supporter 0 %5Droptop\@Resources\GlobalVar\Supporter.inc"
