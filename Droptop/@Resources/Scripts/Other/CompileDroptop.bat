@@ -39,12 +39,10 @@ REM taskkill /f /im "Droptop.exe"
 REM "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\4Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.bat" %5Droptop\@Resources\OriginalFolders\Other files"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@Resources\OriginalFolders\Other files"
-REM %4 !DeactivateConfigGroup DroptopSuite
-REM %4 !DeactivateConfig Droptop\DropdownBar\AppBar
+%4 !DeactivateConfigGroup DroptopSuite
+%4 !DeactivateConfig Droptop\DropdownBar\AppBar
 
-taskkill /f /im "Rainmeter.exe"
-
-taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
+REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopIsUpdate 0 %5Droptop\@Resources\GlobalVar\Control.inc"
@@ -157,6 +155,7 @@ taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables UnitsMetric 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherSymbol 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherTemp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ShowWeatherTempBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideIcons 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables EnableBluetooth 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderMouseOverTimeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -362,6 +361,19 @@ taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables SideAppPosCustomApp8 19 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp9 4 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp10 22 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+
+%4 !WriteKeyValue Variables FolderItemsPerRow1 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow2 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow3 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow4 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow5 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow6 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow7 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow8 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow9 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow10 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow11 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow12 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 
 %4 !WriteKeyValue Variables FolderHidden1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
