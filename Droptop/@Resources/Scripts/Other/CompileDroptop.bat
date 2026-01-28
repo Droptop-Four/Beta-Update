@@ -585,7 +585,6 @@ xcopy /y /c /h /e %5Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitH
 
 xcopy /y /c /h /e /i %5Droptop" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop"
 xcopy /y /c /h /e /i %5Droptop Folders" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop Folders"
-REM forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"
 
 del /f /q %5Droptop\@Resources\Images\Bluetooth\*.jpg"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
@@ -800,3 +799,5 @@ powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 PAUSE
 %4 !WriteKeyValue Variables Page 0 %5Droptop\Other\Startup\Start.ini"
 %4 !ActivateConfig "Droptop\Other\Startup" "Start.ini"
+
+forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"
