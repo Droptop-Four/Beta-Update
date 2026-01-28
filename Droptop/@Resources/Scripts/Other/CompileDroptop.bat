@@ -120,7 +120,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables RecentFileFilter "." %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables RecentFileTypeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables NowPlayingClipNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables GmailUsername "Unassigned" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables GmailUsername "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables GmailPassword "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DeviceIsMobile 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DisplayIsLandscape 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -585,7 +585,7 @@ xcopy /y /c /h /e %5Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitH
 
 xcopy /y /c /h /e /i %5Droptop" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop"
 xcopy /y /c /h /e /i %5Droptop Folders" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop Folders"
-forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"
+REM forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"
 
 del /f /q %5Droptop\@Resources\Images\Bluetooth\*.jpg"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
