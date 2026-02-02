@@ -635,6 +635,7 @@ robocopy %5Droptop" %5Redistributables\Supporter-Version\Skins\Droptop" /E
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Icons"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\OriginalFolders"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\Other"
+RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\DropdownBar"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Fonts"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Images"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Meters"
