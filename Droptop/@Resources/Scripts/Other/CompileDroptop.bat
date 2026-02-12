@@ -170,6 +170,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables CustomHomeButton 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HomeColorNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AutohideShowOnDesktop 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables FastLoadNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
 %4 !WriteKeyValue Variables FolderColorNum1 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderColorNum2 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
