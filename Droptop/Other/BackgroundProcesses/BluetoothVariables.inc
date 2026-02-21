@@ -2,7 +2,7 @@
 
 DevicesNumber=9
 
-Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;iPhoneT|127168605016024|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-73:a8:bf:87:4f:d8|1|1|0|Phone|Unknown|1|65|1;AirPods Pro - Find My|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;iPhoneT|101735706487923|Bluetooth#Bluetootha0:29:42:3a:cd:b0-5c:87:30:a5:6c:73|1|1|0|Phone|Phone Smart Phone|0|0|0;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|1|1|0|HumanInterfaceDevice|DigitalPen|1|100|1;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|1|1|0|HumanInterfaceDevice|Mouse|1|66|1;Logi M750 L|239457178165969|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d9:c8:f8:0b:22:d1|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
+Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;iPhoneT|127168605016024|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-73:a8:bf:87:4f:d8|0|1|0|Phone|Unknown|0|0|1;AirPods Pro - Find My|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;iPhoneT|101735706487923|Bluetooth#Bluetootha0:29:42:3a:cd:b0-5c:87:30:a5:6c:73|1|1|0|Phone|Phone Smart Phone|0|0|0;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Logi M750 L|239457178165969|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d9:c8:f8:0b:22:d1|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
 
 BTStatus=1
 
@@ -19,37 +19,37 @@ Device1Name=Arctis Pro Wireless
 Device2Name=iPhoneT
 Device3Name=AirPods Pro - Find My
 Device4Name=iPhoneT
-Device5Name=NVIDIA SHIELD Remote
-Device6Name=Surface Slim Pen 2
-Device7Name=MX Master 2S
-Device8Name=Surface Arc Mouse
+Device5Name=MX Master 2S
+Device6Name=Surface Arc Mouse
+Device7Name=Surface Slim Pen 2
+Device8Name=NVIDIA SHIELD Remote
 
 Device1Address=44643149312662
 Device2Address=127168605016024
 Device3Address=71141739493567
 Device4Address=101735706487923
-Device5Address=79921510527776
-Device6Address=234849569145700
-Device7Address=223463262609937
-Device8Address=254394102878146
+Device5Address=223463262609937
+Device6Address=254394102878146
+Device7Address=234849569145700
+Device8Address=79921510527776
 
 Device1Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96
 Device2Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-73:a8:bf:87:4f:d8
 Device3Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf
 Device4Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-5c:87:30:a5:6c:73
-Device5Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
-Device6Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64
-Device7Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11
-Device8Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2
+Device5Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11
+Device6Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2
+Device7Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64
+Device8Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 
 Device1Connected=0
-Device2Connected=1
+Device2Connected=0
 Device3Connected=0
 Device4Connected=1
 Device5Connected=0
-Device6Connected=1
+Device6Connected=0
 Device7Connected=0
-Device8Connected=1
+Device8Connected=0
 
 Device1Paired=1
 Device2Paired=1
@@ -73,37 +73,37 @@ Device1MajorCategory=Audio/Video
 Device2MajorCategory=Phone
 Device3MajorCategory=Audio/Video
 Device4MajorCategory=Phone
-Device5MajorCategory=RemoteControl
+Device5MajorCategory=HumanInterfaceDevice
 Device6MajorCategory=HumanInterfaceDevice
 Device7MajorCategory=HumanInterfaceDevice
-Device8MajorCategory=HumanInterfaceDevice
+Device8MajorCategory=RemoteControl
 
 Device1MinorCategory=Audio Video Wearable Headset
 Device2MinorCategory=Unknown
 Device3MinorCategory=Audio Video Headphones
 Device4MinorCategory=Phone Smart Phone
-Device5MinorCategory=Unknown
-Device6MinorCategory=DigitalPen
-Device7MinorCategory=Mouse
-Device8MinorCategory=Mouse
+Device5MinorCategory=Mouse
+Device6MinorCategory=Mouse
+Device7MinorCategory=DigitalPen
+Device8MinorCategory=Unknown
 
 Device1HasBatteryLevel=0
-Device2HasBatteryLevel=1
+Device2HasBatteryLevel=0
 Device3HasBatteryLevel=0
 Device4HasBatteryLevel=0
 Device5HasBatteryLevel=0
-Device6HasBatteryLevel=1
+Device6HasBatteryLevel=0
 Device7HasBatteryLevel=0
-Device8HasBatteryLevel=1
+Device8HasBatteryLevel=0
 
 Device1Battery=0
-Device2Battery=65
+Device2Battery=0
 Device3Battery=0
 Device4Battery=0
 Device5Battery=0
-Device6Battery=100
+Device6Battery=0
 Device7Battery=0
-Device8Battery=66
+Device8Battery=0
 
 Device1IsBLE=0
 Device2IsBLE=1
