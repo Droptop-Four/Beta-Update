@@ -180,12 +180,10 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Downloads\Downloads.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Recent\Recent.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\AppOverflow\AppOverflow.ini" />
             <Folder name="Application Folders">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\AppControls.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder01.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder02.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder\Folder03.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder\Folder\Folder04.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder1.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder2.ini" />
             </Folder>
             <Folder name="Alarm Folders">

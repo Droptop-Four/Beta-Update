@@ -186,3 +186,4 @@ IsOverflowCustomApp5=0
 IsOverflowTime=0
 IsOverflowCustomApp9=0
 IsOverflowBattery=0
+IsOverflowWeather=0
