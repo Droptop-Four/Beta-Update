@@ -10,4 +10,4 @@ rmdir /s /q "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\CustomFolde
 rmdir /s /q "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games"
 rmdir /s /q "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files"
 
-xcopy /s /e /y /f /h ""%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\OriginalFolders"" ""%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders""
+xcopy /s /e /y /f /h "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\OriginalFolders" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders"
