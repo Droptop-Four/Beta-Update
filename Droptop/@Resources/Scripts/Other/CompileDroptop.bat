@@ -112,7 +112,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables HideAppCopy 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppAppDrawer 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppCustomApp1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppCustomApp3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppCustomApp4 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppCustomApp5 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
