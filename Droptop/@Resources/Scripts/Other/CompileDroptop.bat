@@ -389,7 +389,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables FolderHidden12 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 
 %4 !WriteKeyValue Variables FolderListView1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables FolderListView2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderListView2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView4 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView5 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -401,7 +401,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables FolderListView11 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView12 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 
-%4 !WriteKeyValue Variables FolderItemsPerRow1 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow1 4 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderItemsPerRow2 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderItemsPerRow3 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderItemsPerRow4 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
