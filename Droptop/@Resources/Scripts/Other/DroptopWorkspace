@@ -293,6 +293,8 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini" />
         </Folder>
         <Folder name="Scripts">
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\DroptopTaskHelper.vbs" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\DroptopTaskHelper.bat" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestartRainmeter.bat" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\CreateShortcut.vbs" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
@@ -300,7 +302,6 @@
             <Folder name="Lua">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\CScript.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\DropScroll.lua" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\Func.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Bluetooth.lua" />
