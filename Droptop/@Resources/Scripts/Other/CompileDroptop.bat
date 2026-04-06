@@ -654,7 +654,7 @@ xcopy /e /y /f /i %5Droptop\@Resources\Scripts\AppBuilder\TemplateBackup\*" %5Dr
 REM xcopy /e /i /y %5Droptop Community Apps" %5Redistributables\Basic-Version\Skins\Droptop Community Apps" /EXCLUDE:XcopyExclude.txt
 
 
-
+del /f /q %5Redistributables\Basic-Version\Skins\Droptop\@Resources\OriginalApps\*"
 xcopy /e /i /y %5Droptop Community Apps" %5Redistributables\Basic-Version\Skins\Droptop\@Resources\OriginalApps" /EXCLUDE:XcopyExclude.txt
 
 
