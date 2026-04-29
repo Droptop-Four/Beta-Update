@@ -756,7 +756,7 @@ cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git checkout test
 git add .
 git commit -m %2
-git push
+git push -u origin test
 @REM gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See download link below (Droptop_Beta_Update.rmskin). See [Droptop Discord](https://discord.gg/droptop-four-800124057923485728) channel [#Preview-Updates](https://discord.com/channels/800124057923485728/801786468426973185) for change notes." --title "Droptop Update (Beta)"
 
 git config --global http.sslVerify false
@@ -764,7 +764,7 @@ cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
 git checkout test
 git add .
 git commit -m %2
-git push
+git push -u origin test
 
 attrib -h /s %5Droptop Folders\desktop.ini"
 attrib +s /d /s %5Droptop Folders\Games\*"
@@ -797,7 +797,7 @@ cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git checkout test
 git add .
 git commit -m %2
-git push
+git push -u origin test
 REM gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
