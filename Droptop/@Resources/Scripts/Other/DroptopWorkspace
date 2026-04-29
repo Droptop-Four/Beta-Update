@@ -320,6 +320,8 @@
             </Folder>
             <Folder name="Other">
                 <File name="CompileDroptop.bat" />
+                <File name="CompileDroptopBeta.bat" />
+                <File name="CompileDroptopRelease.bat" />
                 <File name="DroptopWorkspace" />
             </Folder>
             <Folder name="Community Apps">
