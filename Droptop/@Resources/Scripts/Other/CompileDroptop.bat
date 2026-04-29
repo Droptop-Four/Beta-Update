@@ -5,19 +5,19 @@ set startTime=%time%
 git config --global http.sslVerify false
 
 cd "%USERPROFILE%\Documents\GitHub"
-git clone https://github.com/Droptop-Four/Beta-Update.git --depth 1  --branch test 
+git clone https://github.com/Droptop-Four/Beta-Update.git --depth 1  --branch main
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git fetch
 git pull
 
 cd "%USERPROFILE%\Documents\GitHub"
-git clone https://github.com/Droptop-Four/Droptop-Four.git --depth 1  --branch test
+git clone https://github.com/Droptop-Four/Droptop-Four.git --depth 1  --branch main
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git fetch
 git pull
 
 cd "%USERPROFILE%\Documents\GitHub"
-git clone https://github.com/Droptop-Four/Community-Apps.git --depth 1  --branch test
+git clone https://github.com/Droptop-Four/Community-Apps.git --depth 1  --branch main
 cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
 git fetch
 git pull
@@ -753,7 +753,7 @@ git config --global user.email "N/A"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
-git checkout test
+git checkout -b test
 git add .
 git commit -m %2
 git push -u origin test
@@ -761,10 +761,14 @@ git push -u origin test
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
-git checkout test
+git checkout -b test
 git add .
 git commit -m %2
 git push -u origin test
+
+PAUSE
+@echo Press any key to continue.
+PAUSE
 
 attrib -h /s %5Droptop Folders\desktop.ini"
 attrib +s /d /s %5Droptop Folders\Games\*"
@@ -794,7 +798,7 @@ PAUSE
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
-git checkout test
+git checkout -b test
 git add .
 git commit -m %2
 git push -u origin test
