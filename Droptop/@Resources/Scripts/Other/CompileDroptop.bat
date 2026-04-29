@@ -5,19 +5,19 @@ set startTime=%time%
 git config --global http.sslVerify false
 
 cd "%USERPROFILE%\Documents\GitHub"
-git clone https://github.com/Droptop-Four/Beta-Update.git --depth 1  --branch main 
+git clone https://github.com/Droptop-Four/Beta-Update.git --depth 1  --branch test 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git fetch
 git pull
 
 cd "%USERPROFILE%\Documents\GitHub"
-git clone https://github.com/Droptop-Four/Droptop-Four.git --depth 1  --branch main 
+git clone https://github.com/Droptop-Four/Droptop-Four.git --depth 1  --branch test
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git fetch
 git pull
 
 cd "%USERPROFILE%\Documents\GitHub"
-git clone https://github.com/Droptop-Four/Community-Apps.git --depth 1  --branch main 
+git clone https://github.com/Droptop-Four/Community-Apps.git --depth 1  --branch test
 cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
 git fetch
 git pull
@@ -753,15 +753,15 @@ git config --global user.email "N/A"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
-git checkout main
+git checkout test
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See download link below (Droptop_Beta_Update.rmskin). See [Droptop Discord](https://discord.gg/droptop-four-800124057923485728) channel [#Preview-Updates](https://discord.com/channels/800124057923485728/801786468426973185) for change notes." --title "Droptop Update (Beta)"
+@REM gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See download link below (Droptop_Beta_Update.rmskin). See [Droptop Discord](https://discord.gg/droptop-four-800124057923485728) channel [#Preview-Updates](https://discord.com/channels/800124057923485728/801786468426973185) for change notes." --title "Droptop Update (Beta)"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
-git checkout main
+git checkout test
 git add .
 git commit -m %2
 git push
@@ -794,11 +794,11 @@ PAUSE
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
-git checkout main
+git checkout test
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
+REM gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
 
